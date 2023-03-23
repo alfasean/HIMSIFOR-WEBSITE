@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.jumbotron {
+    position: absolute;
+    width: 100%;
+}
+
+/* .jumbotron div {
+    background-image: url(./../Assets/himagif.gif);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+} */
+
+.jumbotron h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+}
+
+.jumbotron p {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+
+.jumbotron .logo {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.jumbotron .gif {
+    opacity: 80% !important;
+    background-image: linear-gradient(360deg, #002157 0%, rgba(217, 217, 217, 0) 100%), 
+    url('./../Assets/gif2.gif');
+    width: 100% !important;
+    height: 560px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron .logo .logo-himsifor {
+    width: 87px;
+    height: 87px;
+}
+
+.jumbotron .logo .logo-fmipa {
+    width: 83px;
+    height: 83px;
+}
+
+.jumbotron .logo .logo-unsrat {
+    width: 83px;
+    height: 83px;
+}
+
+.explore {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px !important;
+    border: none !important;
+    height: 46px !important;
+    background-color: #152A57 !important;
+    font-weight: 600 !important;
+    font-size: 18px !important;
+    text-align: center;
+    border-radius: 100px !important;
+}
