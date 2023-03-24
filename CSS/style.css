@@ -1,12 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 * {
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
+.nav-link {
+  color: #475467;
+}
+
+.container-input {
+  position: relative;
+}
+
+.input {
+  width: 150px;
+  padding: 10px 0px 10px 40px;
+  border-radius: 9999px;
+  border: solid 1px #333;
+  transition: all .2s ease-in-out;
+  outline: none;
+  opacity: 0.8;
+}
+
+.container-input svg {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translate(0, -50%);
+}
+
+.input:focus {
+  opacity: 1;
+  width: 250px;
+}
+
+
 .jumbotron {
-    position: absolute;
-    width: 100%;
+  width: 100%;
 }
 
 /* .jumbotron div {
@@ -17,190 +47,367 @@
 } */
 
 .jumbotron h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: 700;
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 700;
 }
 
 .jumbotron p {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: 700;
-    color: #fff;
-    text-align: center;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+
 }
 
 .jumbotron .logo {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .jumbotron .gif {
-    opacity: 80% !important;
-    background-image: linear-gradient(360deg, #002157 0%, rgba(217, 217, 217, 0) 100%), 
+  opacity: 80% !important;
+  background-image: linear-gradient(360deg, #002157 0%, rgba(217, 217, 217, 0) 100%),
     url('./../Assets/gif2.gif');
-    width: 100% !important;
-    height: 560px;
-    background-repeat: no-repeat;
-    background-size: cover;
+  width: 100% !important;
+  height: 560px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .jumbotron .logo .logo-himsifor {
-    width: 87px;
-    height: 87px;
+  width: 60px;
+  height: 60px;
+  margin-right: 25px;
 }
 
 .jumbotron .logo .logo-fmipa {
-    width: 83px;
-    height: 83px;
+  width: 58px;
+  height: 58px;
+  margin-right: 25px;
 }
 
 .jumbotron .logo .logo-unsrat {
-    width: 83px;
-    height: 83px;
+  width: 58px;
+  height: 58px;
+  margin-right: 25px;
 }
 
-.explore {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 200px !important;
-    border: none !important;
-    height: 46px !important;
-    background-color: #152A57 !important;
-    font-weight: 600 !important;
-    font-size: 18px !important;
-    text-align: center;
-    border-radius: 100px !important;
+/* .explore {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px !important;
+  border: none !important;
+  height: 46px !important;
+  background-color: #FF8C1A !important;
+  font-weight: 600 !important;
+  font-size: 18px !important;
+  text-align: center;
+  border-radius: 100px !important;
+} */
+
+.exp {
+  font-size: 18px !important;
+  height: 56px;
+  width: 159px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 27px;
+  background: #FF7F00;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border: none;
 }
 
-.dropdown-item:hover {
-    background-color: #FF7F00 !important;
-    color: #fff !important;
+.exp:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #002157;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
 }
+
+.exp:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+.exp span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 18px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  /* letter-spacing: 0.3em; */
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+.exp:hover span {
+  color: #FFF;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 
 .cari {
-    border: 1px solid #002157 !important;
+  border: 1px solid #002157 !important;
 }
 
 .cari:hover {
-    background-color: #FF7F00 !important;
-    color: #fff !important;
-    border: none !important;
+  background-color: #FF7F00 !important;
+  color: #fff !important;
+  border: none !important;
 }
 
 .switch {
-    font-size: 17px;
-    position: relative;
-    display: inline-block;
-    width: 64px;
-    height: 34px;
-    margin: 0px 15px 0px 0px;
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 64px;
+  height: 34px;
+  margin: 0px 15px 0px 0px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #73C0FC;
+  transition: .4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+  left: 2px;
+  bottom: 2px;
+  z-index: 2;
+  background-color: #e8e8e8;
+  transition: .4s;
+}
+
+.sun svg {
+  position: absolute;
+  top: 6px;
+  left: 36px;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+}
+
+.moon svg {
+  fill: #73C0FC;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+}
+
+/* .switch:hover */
+.sun svg {
+  animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+
+  0% {
+    transform: rotate(0);
   }
-  
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
+
+  100% {
+    transform: rotate(360deg);
   }
-  
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #73C0FC;
-    transition: .4s;
-    border-radius: 30px;
+}
+
+/* .switch:hover */
+.moon svg {
+  animation: tilt 5s linear infinite;
+}
+
+@keyframes tilt {
+
+  0% {
+    transform: rotate(0deg);
   }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 30px;
-    width: 30px;
-    border-radius: 20px;
-    left: 2px;
-    bottom: 2px;
-    z-index: 2;
-    background-color: #e8e8e8;
-    transition: .4s;
+
+  25% {
+    transform: rotate(-10deg);
   }
-  
-  .sun svg {
-    position: absolute;
-    top: 6px;
-    left: 36px;
-    z-index: 1;
-    width: 24px;
-    height: 24px;
+
+  75% {
+    transform: rotate(10deg);
   }
-  
-  .moon svg {
-    fill: #73C0FC;
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    z-index: 1;
-    width: 24px;
-    height: 24px;
+
+  100% {
+    transform: rotate(0deg);
   }
-  
-  /* .switch:hover */.sun svg {
-    animation: rotate 15s linear infinite;
-  }
-  
-  @keyframes rotate {
-   
-    0% {
-      transform: rotate(0);
-    }
-  
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  /* .switch:hover */.moon svg {
-    animation: tilt 5s linear infinite;
-  }
-  
-  @keyframes tilt {
-   
-    0% {
-      transform: rotate(0deg);
-    }
-  
-    25% {
-      transform: rotate(-10deg);
-    }
-  
-    75% {
-      transform: rotate(10deg);
-    }
-  
-    100% {
-      transform: rotate(0deg);
-    }
-  }
-  
-  .input:checked + .slider {
-    background-color: #183153;
-  }
-  
-  .input:focus + .slider {
-    box-shadow: 0 0 1px #183153;
-  }
-  
-  .input:checked + .slider:before {
-    transform: translateX(30px);
-  }
+}
+
+.input:checked+.slider {
+  background-color: #183153;
+}
+
+.input:focus+.slider {
+  box-shadow: 0 0 1px #183153;
+}
+
+.input:checked+.slider:before {
+  transform: translateX(30px);
+}
+
+.apaituhimsi {
+  background-color: #002157;
+  width: 1011px;
+  height: 264px;
+  border-radius: 15px;
+  gap: 21;
+  box-shadow: 16px 16px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+}
+
+.container .himsifor-apaitu {
+  height: 183px;
+  width: 183px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.a-himsi {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32.8206px;
+  line-height: 42px;
+  color: #FF7F00;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.p-himsi {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12.534px;
+  text-align: justify;
+  color: #FFFFFF;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.more {
+  width: 87px;
+  height: 27px;
+  margin-left: 30px;
+  background-color: #FF8C1A;
+  border: 3px solid #FF8C1A;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+}
+
+.div-dept {
+  margin-top: 20px;
+}
+
+.departement {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.title-dept {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-dept h1 {
+  color: #045497 !important;
+  font-size: 16px;
+  font-weight: 400;
+  width: 723px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bulat {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #5189C6;
+  border-radius: 37px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7px;
+}
+
+.dept-name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 10px 0px 0px 64px;
+}
+
+.text-dept {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  font-style: normal;
+  margin-left: 65px;
+  color: #666666;
+}
