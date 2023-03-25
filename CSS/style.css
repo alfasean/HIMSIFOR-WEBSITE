@@ -311,6 +311,11 @@
   transform: translateX(30px);
 }
 
+.shape {
+  background-image: url(./../Assets/background.png);
+  background-repeat: no-repeat;
+}
+
 .apaituhimsi {
   background-color: #002157;
   max-width: 1011px;
@@ -491,4 +496,28 @@
   background-color: #002157;
   box-shadow: 16px 16px 10px rgba(0, 0, 0, 0.15);
   border-radius: 43px;
+}
+
+.data2 {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  margin-top: 200px;
+  line-height: 100%;
+}
+
+.data-jumlah {
+  font-weight: 400;
+  font-size: 58px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.data-isi {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: #979797;
+  margin-right: 200px;
 }
