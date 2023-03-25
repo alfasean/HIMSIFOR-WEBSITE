@@ -503,7 +503,7 @@
   /* justify-content: center;
   align-items: center; */
   margin-top: 200px;
-  line-height: 100%;
+  line-height: 120%;
 }
 
 .data-jumlah {
@@ -521,3 +521,23 @@
   color: #979797;
   margin-right: 200px;
 }
+
+.video {
+  margin-left: 30px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 46px;
+  color: #011F6D;
+  width: 638px;
+}
+
+.welcome {
+  width: 683px;
+  font-weight: 500;
+  font-size: 17.5711px;
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
+}
+
