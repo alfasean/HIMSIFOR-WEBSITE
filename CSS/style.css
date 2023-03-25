@@ -405,14 +405,12 @@
 }
 
 .title-dept h1 {
-  width: 1066px;
-  height: 192px;
-  left: 187px;
-  top: 76px;
+  width: 1140 px;
+  height: 172px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
-  font-size: 64px;
+  font-size: 57px;
   line-height: 150%;
   text-align: center;
   color: #002157;
@@ -477,4 +475,20 @@
   top: 290px;
   filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.15));
   border-radius: 72px;
+}
+
+.hima-foto {
+  width: 1204px;
+  height: 354px;
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.2));
+  border-radius: 41px;
+  position: absolute;
+}
+
+.data {
+  width: 1313px;
+  height: 278px;
+  background-color: #002157;
+  box-shadow: 16px 16px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 43px;
 }
