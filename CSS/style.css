@@ -405,20 +405,33 @@
 }
 
 .title-dept h1 {
-  color: #045497 !important;
-  font-size: 16px;
-  font-weight: 400;
-  width: 723px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 1066px;
+  height: 192px;
+  left: 187px;
+  top: 76px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 150%;
+  text-align: center;
+  color: #002157;
 }
 
-.bulat {
+
+.bulat_biru {
   position: absolute;
   width: 50px;
   height: 50px;
-  background-color: #5189C6;
+  background-color: #002157;
+  border-radius: 37px;
+}
+
+.bulat_orange {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #FF7F00;
   border-radius: 37px;
 }
 
@@ -426,7 +439,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 7px;
+  margin-top: 11px;
 }
 
 .dept-name {
