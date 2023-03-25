@@ -69,9 +69,9 @@
 }
 
 .jumbotron .logo {
- display: flex;
- justify-content: center;
- align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .jumbotron .gif {
@@ -313,7 +313,7 @@
 
 .apaituhimsi {
   background-color: #002157;
-  width: 1011px;
+  max-width: 1011px;
   height: 264px;
   border-radius: 15px;
   gap: 21;
@@ -361,6 +361,32 @@
   font-weight: 600;
   font-size: 14px;
   color: #fff;
+}
+
+.visi-misi {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32.8206px;
+  line-height: 42px;
+  color: #FF7F00;
+}
+
+.paragraf-v {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20.2843px;
+  line-height: 33px;
+  text-align: justify;
+  color: #000000;
+}
+
+.paragraf-m {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20.2843px;
+  line-height: 22px;
+  letter-spacing: 0.025em;
+  color: #000000;
 }
 
 .div-dept {
