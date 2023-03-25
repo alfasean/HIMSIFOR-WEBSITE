@@ -47,18 +47,20 @@
 } */
 
 .jumbotron h1 {
-  position: absolute;
+  /* position: absolute;
   top: 57%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+  margin-bottom: 10px;
+  text-align: center;
   font-weight: 700;
 }
 
 .jumbotron p {
-  position: absolute;
+  /* position: absolute;
   top: 70%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   font-weight: 700;
   color: #fff;
   text-align: center;
@@ -67,10 +69,9 @@
 }
 
 .jumbotron .logo {
-  position: absolute;
-  top: 43%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
 .jumbotron .gif {
@@ -78,7 +79,7 @@
   background-image: linear-gradient(360deg, #002157 0%, rgba(217, 217, 217, 0) 100%),
     url('./../Assets/gif2.gif');
   width: 100% !important;
-  height: 560px;
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -86,19 +87,21 @@
 .jumbotron .logo .logo-himsifor {
   width: 60px;
   height: 60px;
-  margin-right: 25px;
+  margin: 214px 25px 25px 0px;
 }
 
 .jumbotron .logo .logo-fmipa {
   width: 58px;
   height: 58px;
   margin-right: 25px;
+  margin-top: 214px;
+  margin: 214px 25px 25px 0px;
 }
 
 .jumbotron .logo .logo-unsrat {
   width: 58px;
   height: 58px;
-  margin-right: 25px;
+  margin: 214px 25px 25px 0px;
 }
 
 /* .explore {
@@ -116,17 +119,21 @@
   border-radius: 100px !important;
 } */
 
+.button-exp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 157px;
+}
+
 .exp {
   font-size: 18px !important;
   height: 56px;
   width: 159px;
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
   border-radius: 27px;
   background: #FF7F00;
   box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
