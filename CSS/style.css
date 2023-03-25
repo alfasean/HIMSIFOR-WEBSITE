@@ -444,3 +444,24 @@
   margin-left: 65px;
   color: #666666;
 }
+
+.judul-content {
+  height: 184px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 92px;
+  text-align: center;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #011F6D;
+}
+
+.gmbrr {
+  width: 999px;
+  height: 530px;
+  left: 78px;
+  top: 290px;
+  filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.15));
+  border-radius: 72px;
+}
