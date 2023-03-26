@@ -388,7 +388,7 @@
 .paragraf-v {
   font-style: normal;
   font-weight: 400;
-  font-size: 20.2843px;
+  font-size: 18px;
   line-height: 33px;
   text-align: justify;
   color: #000000;
@@ -397,10 +397,11 @@
 .paragraf-m {
   font-style: normal;
   font-weight: 400;
-  font-size: 20.2843px;
+  font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.025em;
   color: #000000;
+  text-align: justify;
   background-color: transparent !important;
 }
 
@@ -413,16 +414,9 @@
   margin-bottom: 20px;
 }
 
-/* .title-dept {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
 .title-dept {
   width: 100%;
   height: auto;
-  font-family: 'Poppins';
   font-weight: 700;
   font-size: 56px;
   text-align: center;
@@ -513,8 +507,6 @@
 
 .data2 {
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
   margin-top: 200px;
   line-height: 120%;
 }
@@ -573,6 +565,9 @@
 @media (max-width: 767px) {
   .video {
     font-size: 20px;
+  }
 
+  .gmbrr {
+    border-radius: 10px;
   }
 }
