@@ -319,18 +319,22 @@
 .apaituhimsi {
   background-color: #002157;
   max-width: 1011px;
-  height: 264px;
   border-radius: 15px;
   gap: 21;
   box-shadow: 16px 16px 10px rgba(0, 0, 0, 0.15);
   border-radius: 15px;
 }
 
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .container .himsifor-apaitu {
   height: 183px;
   width: 183px;
-  margin-top: 30px;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .a-himsi {
@@ -366,7 +370,12 @@
   font-weight: 600;
   font-size: 14px;
   color: #fff;
+  margin-bottom: 35px;
 }
+
+/* .div-vm {
+  flex: 1 0 900px;
+} */
 
 .visi-misi {
   font-style: normal;
@@ -392,6 +401,7 @@
   line-height: 22px;
   letter-spacing: 0.025em;
   color: #000000;
+  background-color: transparent !important;
 }
 
 .div-dept {
@@ -403,20 +413,18 @@
   margin-bottom: 20px;
 }
 
-.title-dept {
+/* .title-dept {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.title-dept h1 {
-  width: 1140 px;
-  height: 172px;
+.title-dept {
+  width: 100%;
+  height: auto;
   font-family: 'Poppins';
-  font-style: normal;
   font-weight: 700;
-  font-size: 57px;
-  line-height: 150%;
+  font-size: 56px;
   text-align: center;
   color: #002157;
 }
@@ -462,24 +470,29 @@
 }
 
 .judul-content {
-  height: 184px;
+  width: 100%;
+  height: auto;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
-  font-size: 64px;
+  font-size: 56px;
   line-height: 92px;
   text-align: center;
-  font-feature-settings: 'pnum' on, 'lnum' on;
   color: #011F6D;
 }
 
 .gmbrr {
-  width: 999px;
-  height: 530px;
+  width: 100%;
+  height: auto;
   left: 78px;
   top: 290px;
   filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.15));
   border-radius: 72px;
+}
+
+.gmbrr:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
 }
 
 .hima-foto {
@@ -523,17 +536,17 @@
 }
 
 .video {
-  margin-left: 30px;
   text-align: center;
   font-weight: 700;
   font-size: 46px;
-  line-height: 46px;
   color: #011F6D;
-  width: 638px;
+  /* width: 638px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .welcome {
-  width: 683px;
   font-weight: 500;
   font-size: 17.5711px;
   line-height: 22px;
@@ -541,3 +554,25 @@
   color: #000000;
 }
 
+
+@media (max-width: 846px) {
+  .judul-content {
+    font-size: 30px;
+    line-height: 100%;
+  }
+
+  .title-dept {
+    font-size: 30px;
+  }
+  .video {
+    font-size: 20px;
+
+  }
+}
+
+@media (max-width: 767px) {
+  .video {
+    font-size: 20px;
+
+  }
+}
