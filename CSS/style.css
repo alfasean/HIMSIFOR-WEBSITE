@@ -127,8 +127,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 157px;
+  margin-top: 17vh;
 }
+
 
 .exp {
   font-size: 18px !important;
@@ -510,9 +511,14 @@ body {
 
 .data2 {
   display: flex;
-  margin-top: 200px;
+  margin-top: 33vh;
   line-height: 120%;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
+  flex-wrap: wrap;
+}
+
+.item {
+  flex: 1 1 100px;
 }
 
 .data-jumlah {
@@ -680,6 +686,24 @@ body {
 @media (max-width: 576px) {
   .container {
     padding: 0 20px;
+  }
+
+  @media (max-width: 677px) {
+    .hima-foto {
+      height: 47%;
+    }
+  
+    .data-nama {
+      font-size: 13px;
+    }
+  
+    .data-jumlah {
+      font-size: 40px;
+    }
+  
+    .data2 {
+      margin-top: 25vh;
+    }
   }
 
   /* logo himpunan */
