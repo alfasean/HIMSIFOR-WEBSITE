@@ -4,6 +4,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+body {
+  background-color: #ECF2FE !important;
+}
+
 .nav-link {
   color: #475467;
 }
@@ -490,7 +494,7 @@
 }
 
 .hima-foto {
-  width: 1204px;
+  width: 93%;
   height: 354px;
   filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.2));
   border-radius: 41px;
@@ -498,8 +502,7 @@
 }
 
 .data {
-  width: 1313px;
-  height: 278px;
+  width: 97%;
   background-color: #002157;
   box-shadow: 16px 16px 10px rgba(0, 0, 0, 0.15);
   border-radius: 43px;
@@ -509,22 +512,22 @@
   display: flex;
   margin-top: 200px;
   line-height: 120%;
+  margin-bottom: 20px;
 }
 
 .data-jumlah {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 58px;
   text-align: center;
   color: #FFFFFF;
 }
 
-.data-isi {
+.data-nama {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   text-align: center;
   color: #979797;
-  margin-right: 200px;
 }
 
 .video {
