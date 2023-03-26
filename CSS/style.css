@@ -574,3 +574,176 @@ body {
     border-radius: 10px;
   }
 }
+.container{
+  margin-top: 60px;
+}
+#logo-himpunan {
+  margin-bottom: 30px;
+}
+#logo-himpunan h2.logo-himpunan-title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 92px;
+  text-align: center;
+  color: #011F6D;
+  margin-bottom: 70px;
+}
+#logo-himpunan .lh-container {
+  position: relative;
+}
+#logo-himpunan .lh-container .lh-logo {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#logo-himpunan .lh-container .lh-logo img {
+  width: 450px;
+  height: 450px;
+}
+#logo-himpunan .lh-box {
+  background-color: #fff;
+  padding: 10px 5px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  max-width: 390px;
+}
+#logo-himpunan .lh-box .number h6 {
+  padding: 5px 8px;
+  background-color: #FF7F00;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 17.8116px;
+  line-height: 27px;
+  color: #fff;
+  display: inline;
+}
+#logo-himpunan .lh-box .text {
+  /* margin: 0 39px; */
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14.413px;
+  line-height: 22px;
+  margin-top: 39px;
+  margin-bottom: 40px;
+}
+#logo-himpunan .lh-box .order {
+  display: flex;
+  align-items: end;
+}
+#logo-himpunan .lh-box .order h6 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 69.663px;
+  color: rgba(0, 0, 0, 0.12);
+}
+
+.lh-layer1 {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 280px;
+  margin-bottom: 15px;
+}
+.lh-layer2 {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 386px;
+  margin-bottom: 15px;
+}
+.lh-layer3 {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 36px;
+  margin-bottom: 15px;
+}
+#logo-himpunan .lh-box.lh-box-1 {
+  width: 340px;
+}
+#logo-himpunan .lh-box.lh-box-2 {
+  width: 340px;
+}
+#logo-himpunan .lh-box.lh-box-3 {
+  width: 337px;
+  margin-top: -50px;
+}
+#logo-himpunan .lh-box.lh-box-4 {
+  width: 337px;
+}
+#logo-himpunan .lh-box.lh-box-5 {
+  margin-top: -10px;
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  /* logo himpunan */
+  #logo-himpunan h2.logo-himpunan-title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  #logo-himpunan .lh-container .lh-logo {
+    position: relative;
+    text-align: center;
+  }
+  #logo-himpunan .lh-container .lh-logo img {
+    width: 100%;
+    height: 100%;
+  }
+  #logo-himpunan .lh-box {
+    width: 100%;
+  }
+  .lh-layer1 {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  .lh-layer2 {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  .lh-layer3 {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    margin-bottom: 200px;
+  }
+  #logo-himpunan .lh-box.lh-box-1 {
+    width: 100%;
+  }
+  #logo-himpunan .lh-box.lh-box-2 {
+    width: 100%;
+  }
+  #logo-himpunan .lh-box.lh-box-3 {
+    width: 100%;
+    margin-top: 0;
+  }
+  #logo-himpunan .lh-box.lh-box-4 {
+    width: 100%;
+  }
+  #logo-himpunan .lh-box.lh-box-5 {
+    margin-top: 0;
+  }
+  #logo-himpunan .lh-box.lh-box-6 {
+    width: 100%;
+  }
+  #logo-himpunan .lh-box.lh-box-7 {
+    width: 100%;
+  }
+}
