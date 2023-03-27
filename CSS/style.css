@@ -840,3 +840,101 @@ body #nvb {
 .dark .hima-logo-dark {
   opacity: 1;
 }
+
+.row {
+  display: inline;
+  flex-wrap: wrap;
+}
+
+.footer ul li {
+  list-style: none;
+}
+
+.footer {
+  background-color: #002157;
+  border-top-right-radius: 5%;
+  border-top-left-radius: 5%;
+  padding: 70px 0;
+  padding-right : 50px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height:533px;
+  box-shadow: 0px -10px 20px 1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px -10px 20px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px -10px 20px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+.col h4 {
+  font-size: 15px;
+  color: #ff7f00;
+  text-transform: capitalize;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: right;
+}
+
+.col p {
+  color: hsl(215, 55%, 21%);
+  margin-left: 30;
+}
+
+.col {
+  border-radius: 4px solid white;
+  text-align: left;
+  display: grid;
+  align-items: center;
+}
+
+iframe {
+  border-radius: 30px;
+}
+
+.medsos {
+  text-align: justify;
+  margin-left: 83px;
+  width: 100%;
+}
+
+.col .medsos a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.col .medsos a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+.col #temukan li {
+  color: #ff7f00;
+  display: flex;
+}
+
+.col #temukan li i {
+  padding-right: 10px;
+}
+
+
+.fixed-footer {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 100px;
+  font-size:13px;
+}
+
+.fixed-footer {
+  text-align: center;
+  color: #ffffff;
+  font-size : 13px;
+}
