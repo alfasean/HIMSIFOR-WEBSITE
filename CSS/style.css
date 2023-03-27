@@ -365,9 +365,13 @@ body #nvb {
   margin-left: 30px;
 }
 
+.apaitu {
+  margin-bottom: 60px;
+}
+
 .more {
-  width: 87px;
-  height: 27px;
+  width: 130px;
+  margin: 0px 0px 10px 0px;
   margin-left: 30px;
   background-color: #FF8C1A;
   border: 3px solid #FF8C1A;
@@ -376,12 +380,9 @@ body #nvb {
   font-weight: 600;
   font-size: 14px;
   color: #fff;
-  margin-bottom: 35px;
+  position: absolute;
+  cursor: pointer;
 }
-
-/* .div-vm {
-  flex: 1 0 900px;
-} */
 
 .visi-misi {
   font-style: normal;
