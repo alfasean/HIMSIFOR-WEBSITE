@@ -8,6 +8,10 @@ body {
   background-color: #ECF2FE !important;
 }
 
+body #nvb {
+  background-color: #fff !important;
+}
+
 .nav-link {
   color: #475467;
 }
@@ -42,13 +46,6 @@ body {
 .jumbotron {
   width: 100%;
 }
-
-/* .jumbotron div {
-    background-image: url(./../Assets/himagif.gif);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-} */
 
 .jumbotron h1 {
   /* position: absolute;
@@ -502,6 +499,11 @@ body {
   position: absolute;
 }
 
+.hima-logo-dark {
+  position: absolute;
+  opacity: 0;
+}
+
 .data {
   width: 97%;
   background-color: #002157;
@@ -541,7 +543,7 @@ body {
   font-weight: 700;
   font-size: 46px;
   color: #011F6D;
-  /* width: 638px; */
+  line-height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -768,4 +770,73 @@ body {
   #logo-himpunan .lh-box.lh-box-7 {
     width: 100%;
   }
+}
+
+.dark {
+  background-color: #2C3333 !important;
+}
+
+.dark .apaituhimsi {
+  background-color: #2C3333 !important;
+}
+
+.dark .paragraf-m {
+  color: #fff !important;
+}
+
+.dark .paragraf-v {
+  color: #fff !important;
+}
+
+.dark .gif {
+  background: linear-gradient(360deg, #000917 0%, rgba(217, 217, 217, 0) 100%),
+  url('./../Assets/gif2.gif');
+}
+
+.dark .video {
+  color: #FF7F00;
+}
+
+.dark .welcome {
+  color: #fff;
+}
+
+.dark .logo-himpunan-title {
+  color: #FF7F00 !important;
+}
+
+.dark .judul-content {
+  color: #FF7F00 !important;
+}
+
+.dark .title-dept {
+  color: #FF7F00 !important;
+}
+
+.dark .dept-name {
+  color: #fff !important;
+}
+
+.dark .text-dept {
+  color: #FF7F00 !important;
+}
+
+.dark .data {
+  background-color: #353F3F;
+}
+
+.dark #nvb {
+  background-color: #1B2020 !important;
+}
+
+.dark .nav-link {
+  color: #FFF !important;
+}
+
+.dark .hima-logo {
+  opacity: 0;
+}
+
+.dark .hima-logo-dark {
+  opacity: 1;
 }
