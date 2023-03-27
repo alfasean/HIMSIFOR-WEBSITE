@@ -16,6 +16,35 @@ body #nvb {
   color: #475467;
 }
 
+.text-himsifor {
+  position: relative;
+  font-size: 14vw;
+  -webkit-text-stroke: 1px #ffffffb4;
+  color: transparent !important;
+}
+
+.text-himsifor::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: #FFF;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes animate {
+  0%,10%,100% {
+    width: 0;
+  }
+  70%,90% {
+    width: 100%;
+  }
+}
+
 .container-input {
   position: relative;
 }
@@ -48,20 +77,15 @@ body #nvb {
 }
 
 .jumbotron h1 {
-  /* position: absolute;
-  top: 57%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
   margin-bottom: 10px;
   text-align: center;
   font-weight: 700;
 }
 
 .jumbotron p {
-  /* position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
+  opacity: 80%;
+  font-size: 15px;
+  margin: 0px 20px 0px 20px;
   font-weight: 700;
   color: #fff;
   text-align: center;
@@ -104,21 +128,6 @@ body #nvb {
   height: 58px;
   margin: 214px 25px 25px 0px;
 }
-
-/* .explore {
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 200px !important;
-  border: none !important;
-  height: 46px !important;
-  background-color: #FF8C1A !important;
-  font-weight: 600 !important;
-  font-size: 18px !important;
-  text-align: center;
-  border-radius: 100px !important;
-} */
 
 .button-exp {
   display: flex;
@@ -224,7 +233,7 @@ body #nvb {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #73C0FC;
+  background-color: #183153;
   transition: .4s;
   border-radius: 30px;
 }
@@ -242,7 +251,7 @@ body #nvb {
   transition: .4s;
 }
 
-.sun svg {
+.moon svg {
   position: absolute;
   top: 6px;
   left: 36px;
@@ -251,7 +260,7 @@ body #nvb {
   height: 24px;
 }
 
-.moon svg {
+.sun svg {
   fill: #73C0FC;
   position: absolute;
   top: 5px;
@@ -262,7 +271,7 @@ body #nvb {
 }
 
 /* .switch:hover */
-.sun svg {
+.moon svg {
   animation: rotate 15s linear infinite;
 }
 
@@ -278,7 +287,7 @@ body #nvb {
 }
 
 /* .switch:hover */
-.moon svg {
+.sun svg {
   animation: tilt 5s linear infinite;
 }
 
@@ -311,11 +320,6 @@ body #nvb {
 
 .input:checked+.slider:before {
   transform: translateX(30px);
-}
-
-.shape {
-  background-image: url(./../Assets/background.png);
-  background-repeat: no-repeat;
 }
 
 .apaituhimsi {
@@ -581,6 +585,14 @@ body #nvb {
   .gmbrr {
     border-radius: 10px;
   }
+
+  .temukann {
+    margin-top: 40px !important;
+  }
+
+  .mdsos {
+    padding: 0px !important;
+  }
 }
 
 #logo-himpunan {
@@ -841,6 +853,10 @@ body #nvb {
   opacity: 1;
 }
 
+.dark .footer {
+  background-color: #1B2020;
+}
+
 .row {
   display: inline;
   flex-wrap: wrap;
@@ -854,12 +870,11 @@ body #nvb {
   background-color: #002157;
   border-top-right-radius: 5%;
   border-top-left-radius: 5%;
-  padding: 70px 0;
+  padding-top: 50px;
   padding-right : 50px;
   position: relative;
   bottom: 0;
   width: 100%;
-  height:533px;
   box-shadow: 0px -10px 20px 1px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0px -10px 20px 1px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px -10px 20px 1px rgba(0, 0, 0, 0.5);
@@ -871,7 +886,7 @@ body #nvb {
   color: #ff7f00;
   text-transform: capitalize;
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   position: right;
 }
@@ -893,8 +908,8 @@ iframe {
 }
 
 .medsos {
-  text-align: justify;
-  margin-left: 83px;
+  /* text-align: justify; */
+  /* margin-left: 83px; */
   width: 100%;
 }
 
@@ -929,12 +944,8 @@ iframe {
 .fixed-footer {
   text-align: center;
   color: #ffffff;
-  margin-top: 100px;
+  padding-top: 80px;
+  padding-bottom: 20px;
   font-size:13px;
 }
 
-.fixed-footer {
-  text-align: center;
-  color: #ffffff;
-  font-size : 13px;
-}
