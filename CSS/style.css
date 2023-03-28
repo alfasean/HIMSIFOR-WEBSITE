@@ -37,10 +37,15 @@ body #nvb {
 }
 
 @keyframes animate {
-  0%,10%,100% {
+
+  0%,
+  10%,
+  100% {
     width: 0;
   }
-  70%,90% {
+
+  70%,
+  90% {
     width: 100%;
   }
 }
@@ -454,7 +459,37 @@ body #nvb {
   margin-top: 11px;
 }
 
+.dept-div {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.dept-div:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
 .dept-name {
+  text-decoration: none !important;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
@@ -572,6 +607,7 @@ body #nvb {
   .title-dept {
     font-size: 30px;
   }
+
   .video {
     font-size: 20px;
 
@@ -599,6 +635,7 @@ body #nvb {
 #logo-himpunan {
   margin-bottom: 30px;
 }
+
 #logo-himpunan h2.logo-himpunan-title {
   font-weight: 700;
   font-size: 64px;
@@ -607,19 +644,23 @@ body #nvb {
   color: #011F6D;
   margin-bottom: 70px;
 }
+
 #logo-himpunan .lh-container {
   position: relative;
 }
+
 #logo-himpunan .lh-container .lh-logo {
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 #logo-himpunan .lh-container .lh-logo img {
   width: 450px;
   height: 450px;
 }
+
 #logo-himpunan .lh-box {
   background-color: #fff;
   padding: 10px 5px;
@@ -628,6 +669,7 @@ body #nvb {
   border-radius: 5px;
   max-width: 390px;
 }
+
 #logo-himpunan .lh-box .number h6 {
   padding: 5px 8px;
   background-color: #FF7F00;
@@ -638,6 +680,7 @@ body #nvb {
   color: #fff;
   display: inline;
 }
+
 #logo-himpunan .lh-box .text {
   /* margin: 0 39px; */
   text-align: center;
@@ -648,10 +691,12 @@ body #nvb {
   margin-top: 39px;
   margin-bottom: 40px;
 }
+
 #logo-himpunan .lh-box .order {
   display: flex;
   align-items: end;
 }
+
 #logo-himpunan .lh-box .order h6 {
   font-family: "Montserrat";
   font-style: normal;
@@ -667,6 +712,7 @@ body #nvb {
   gap: 280px;
   margin-bottom: 15px;
 }
+
 .lh-layer2 {
   display: flex;
   align-items: start;
@@ -674,6 +720,7 @@ body #nvb {
   gap: 386px;
   margin-bottom: 15px;
 }
+
 .lh-layer3 {
   display: flex;
   align-items: start;
@@ -681,19 +728,24 @@ body #nvb {
   gap: 36px;
   margin-bottom: 15px;
 }
+
 #logo-himpunan .lh-box.lh-box-1 {
   width: 340px;
 }
+
 #logo-himpunan .lh-box.lh-box-2 {
   width: 340px;
 }
+
 #logo-himpunan .lh-box.lh-box-3 {
   width: 337px;
   margin-top: -50px;
 }
+
 #logo-himpunan .lh-box.lh-box-4 {
   width: 337px;
 }
+
 #logo-himpunan .lh-box.lh-box-5 {
   margin-top: -10px;
 }
@@ -707,15 +759,15 @@ body #nvb {
     .hima-foto {
       height: 47%;
     }
-  
+
     .data-nama {
       font-size: 13px;
     }
-  
+
     .data-jumlah {
       font-size: 40px;
     }
-  
+
     .data2 {
       margin-top: 25vh;
     }
@@ -726,17 +778,21 @@ body #nvb {
     font-size: 30px;
     line-height: 30px;
   }
+
   #logo-himpunan .lh-container .lh-logo {
     position: relative;
     text-align: center;
   }
+
   #logo-himpunan .lh-container .lh-logo img {
     width: 100%;
     height: 100%;
   }
+
   #logo-himpunan .lh-box {
     width: 100%;
   }
+
   .lh-layer1 {
     display: flex;
     align-items: start;
@@ -745,6 +801,7 @@ body #nvb {
     flex-direction: column;
     margin-bottom: 15px;
   }
+
   .lh-layer2 {
     display: flex;
     align-items: start;
@@ -753,6 +810,7 @@ body #nvb {
     flex-direction: column;
     margin-bottom: 15px;
   }
+
   .lh-layer3 {
     display: flex;
     align-items: start;
@@ -761,25 +819,32 @@ body #nvb {
     flex-direction: column;
     margin-bottom: 200px;
   }
+
   #logo-himpunan .lh-box.lh-box-1 {
     width: 100%;
   }
+
   #logo-himpunan .lh-box.lh-box-2 {
     width: 100%;
   }
+
   #logo-himpunan .lh-box.lh-box-3 {
     width: 100%;
     margin-top: 0;
   }
+
   #logo-himpunan .lh-box.lh-box-4 {
     width: 100%;
   }
+
   #logo-himpunan .lh-box.lh-box-5 {
     margin-top: 0;
   }
+
   #logo-himpunan .lh-box.lh-box-6 {
     width: 100%;
   }
+
   #logo-himpunan .lh-box.lh-box-7 {
     width: 100%;
   }
@@ -803,7 +868,7 @@ body #nvb {
 
 .dark .gif {
   background: linear-gradient(360deg, #000917 0%, rgba(217, 217, 217, 0) 100%),
-  url('./../Assets/gif2.gif');
+    url('./../Assets/gif2.gif');
 }
 
 .dark .video {
@@ -827,7 +892,7 @@ body #nvb {
 }
 
 .dark .dept-name {
-  color: #fff !important;
+  color: #000 !important;
 }
 
 .dark .text-dept {
@@ -872,7 +937,7 @@ body #nvb {
   border-top-right-radius: 5%;
   border-top-left-radius: 5%;
   padding-top: 50px;
-  padding-right : 50px;
+  padding-right: 50px;
   position: relative;
   bottom: 0;
   width: 100%;
@@ -947,6 +1012,5 @@ iframe {
   color: #ffffff;
   padding-top: 80px;
   padding-bottom: 20px;
-  font-size:13px;
+  font-size: 13px;
 }
-
