@@ -12,9 +12,29 @@ body #nvb {
   background-color: #fff !important;
 }
 
-.navbar>.nav-item>.nav-link:hover {
-  transition: all .3s ease-in-out;
-  color: #011F6D;
+@media (min-width : 992px) {
+  .offcanvas {
+    visibility      : visible;
+    position        : relative;
+    background      : none;
+    border          : none;
+    justify-content : end;
+    color           : red;
+  }
+}
+
+@media (max-width : 992px) {
+  .offcanvas {
+    width : 250px !important;
+  }
+
+  .offcanvas-start-lg {
+    top          : 0;
+    left         : 0;
+    border-right : 1px solid rgba(0, 0, 0, .2);
+    transform    : translateX(-100%);
+  }
+
 }
 
 .text-himsifor {
@@ -852,6 +872,10 @@ a:active {
 }
 
 .dark {
+  background-color: #2C3333 !important;
+}
+
+.dark .offcanvas-body {
   background-color: #2C3333 !important;
 }
 
