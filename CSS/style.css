@@ -12,6 +12,11 @@ body #nvb {
   background-color: #fff !important;
 }
 
+.navbar>.nav-item>.nav-link:hover {
+  transition: all .3s ease-in-out;
+  color: #011F6D;
+}
+
 .text-himsifor {
   position: relative;
   font-size: 14vw;
@@ -848,6 +853,11 @@ a:active {
 
 .dark {
   background-color: #2C3333 !important;
+}
+
+.dark .gif {
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .dark .apaituhimsi {

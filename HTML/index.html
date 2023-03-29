@@ -13,6 +13,20 @@
 </head>
 
 <body>
+
+    <nav class="navbar">
+        <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+  
+        <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+          <span class="material-icons">menu</span>
+        </button>
+        <h1 class="navbar-title">Awards</h1>
+        <nav class="navbar-menu">
+          <button type="button">Skills</button>
+          <button type="button" class="active">Awards</button>
+          <button type="button">Projects</button>
+        </nav>
+      </nav>
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="nvb">
         <div class="container">
             <a class="navbar-brand d-flex" href="#">
@@ -29,7 +43,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Profil</a>
+                        <a class="nav-link active" href="#">Profil</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
