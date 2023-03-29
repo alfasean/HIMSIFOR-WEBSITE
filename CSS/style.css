@@ -879,9 +879,17 @@ a:active {
   background-color: #2C3333 !important;
 }
 
+.dark .offcanvas {
+  background-color: #2C3333 !important;
+}
+
+.dark .offcanvas-body {
+  background-color: #1B2020 !important;
+}
+
 .dark .gif {
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 
 .dark .apaituhimsi {
