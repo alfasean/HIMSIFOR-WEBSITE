@@ -12,10 +12,6 @@ body #nvb {
   background-color: #fff !important;
 }
 
-.nav-link {
-  color: #475467;
-}
-
 .text-himsifor {
   position: relative;
   font-size: 14vw;
@@ -491,7 +487,7 @@ a:active {
 .dept-name {
   text-decoration: none !important;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 19px;
   line-height: 32px;
   margin: 10px 0px 0px 64px;
 }
@@ -926,6 +922,16 @@ a:active {
 .row {
   display: inline;
   flex-wrap: wrap;
+}
+
+.dark .lh-box {
+  background-color: transparent !important;
+  color: #fff;
+  border: solid 1px #fff;
+}
+
+.dark .order h6 {
+  color: rgba(255, 255, 255, 0.12) !important;
 }
 
 .footer ul li {

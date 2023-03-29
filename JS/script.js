@@ -30,15 +30,3 @@ function animateValue(obj, start, end, duration) {
   };
   window.requestAnimationFrame(step);
 }
-
-const dept = document.getElementById("jumlah-dept");
-animateValue(dept, 0, 8, 1500);
-
-const anggota = document.getElementById("jumlah-anggota");
-animateValue(anggota, 0, 500, 4700);
-
-const proker = document.getElementById("jumlah-proker");
-animateValue(proker, 0, 50, 2500);
-
-const pengurus = document.getElementById("jumlah-pengurus");
-animateValue(pengurus, 0, 107, 4000);
