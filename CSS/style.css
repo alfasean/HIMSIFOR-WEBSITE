@@ -777,6 +777,7 @@ a:active {
   width: 320px;
   margin-top: -5px;
 }
+
 .dept-p11{
   background-color: #ffffff;
   margin-top: -27px;
@@ -836,6 +837,13 @@ color: #002157;
 .pengkaderan-img {
   filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.15));
   border-radius: 10px;
+}
+
+.humas-img {
+  width: 1290px;
+  height: 475px;
+  left: 75px;
+  top: 695px;
 }
 
 .ttl-dept1 {
@@ -1486,7 +1494,6 @@ color: #002157;
   -webkit-box-shadow: 0px -10px 20px 1px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px -10px 20px 1px rgba(0, 0, 0, 0.5);
 }
-
 
 .col h4 {
   font-size: 15px;
