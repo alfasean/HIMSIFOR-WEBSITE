@@ -269,10 +269,6 @@ body #nvb {
   height: 24px;
 }
 
-/* .switch:hover */
-.moon svg {
-  animation: rotate 15s linear infinite;
-}
 
 @keyframes rotate {
 
