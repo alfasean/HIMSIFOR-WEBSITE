@@ -17,6 +17,30 @@ toggleSwitch.addEventListener('click', function(e) {
   document.body.className = checked ? 'dark' : '' 
 })
 
+function animateValue(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    obj.innerHTML = Math.floor(progress * (end - start) + start);
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
+const dept = document.getElementById("jumlah-dept");
+animateValue(dept, 0, 8, 1500);
+
+const anggota = document.getElementById("jumlah-anggota");
+animateValue(anggota, 0, 500, 4700);
+
+const proker = document.getElementById("jumlah-proker");
+animateValue(proker, 0, 50, 2500);
+
+const pengurus = document.getElementById("jumlah-pengurus");
+animateValue(pengurus, 0, 107, 4000);
+
 //department//
 var swiper = new Swiper(".slide-container", {
   slidesPerView: 3,
@@ -124,27 +148,3 @@ optionsList.forEach(o => {
   });
 });
 //departent//
-
-function animateValue(obj, start, end, duration) {
-  let startTimestamp = null;
-  const step = (timestamp) => {
-    if (!startTimestamp) startTimestamp = timestamp;
-    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-    obj.innerHTML = Math.floor(progress * (end - start) + start);
-    if (progress < 1) {
-      window.requestAnimationFrame(step);
-    }
-  };
-  window.requestAnimationFrame(step);
-}
-const dept = document.getElementById("jumlah-dept");
-animateValue(dept, 0, 8, 1500);
-
-const anggota = document.getElementById("jumlah-anggota");
-animateValue(anggota, 0, 500, 4700);
-
-const proker = document.getElementById("jumlah-proker");
-animateValue(proker, 0, 50, 2500);
-
-const pengurus = document.getElementById("jumlah-pengurus");
-animateValue(pengurus, 0, 107, 4000);
