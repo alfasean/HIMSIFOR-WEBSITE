@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himsifor | Berita</title>
+    <link rel="icon" sizes="200x200" href="./../Assets/himsifor.png" />
+    <link rel="stylesheet" href="./../CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/9403f07adf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class='navbar navbar-expand-lg' id="nvb">
+        <div class='container'>
+            <a class="navbar-brand d-flex" href="#">
+                <img src="./../Assets/himsifor horizontal.png" alt="Logo"
+                    class="d-inline-block align-text-top hima-logo" style="width: 200px; height: 50px;">
+                <img src="./../Assets/dark.png" alt="Logo" class="d-inline-block align-text-top hima-logo-dark"
+                    style="width: 200px; height: 50px;">
+            </a>
+            <button class='btn navbar-toggler border-3 px-2' type='button' data-bs-toggle='offcanvas'
+                data-bs-target='#offcanvasExample' aria-controls='offcanvasExample'>
+                <img style='width: 30px' src='./../Assets/text-center.svg' alt='menu icon' id="menu_icon">
+            </button>
+            <div class='offcanvas offcanvas-start-lg' tabindex='-1' id='offcanvasExample'
+                aria-labelledby='offcanvasExampleLabel'>
+                <div class='offcanvas-header d-flex d-lg-none'>
+                    <img src="./../Assets/himsifor horizontal.png" alt="Logo"
+                        class="d-inline-block align-text-top hima-logo" style="width: 200px; height: 50px;">
+                    <img src="./../Assets/dark.png" alt="Logo" class="d-inline-block align-text-top hima-logo-dark"
+                        style="width: 200px; height: 50px;">
+                    <a href='javascript:void(0) ' class='text-reset p-0' data-bs-dismiss='offcanvas' aria-label='close'>
+                        <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='#FFFFFF'
+                            class='bi bi-x-circle' viewBox='0 0 16 16'>
+                            <path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z' />
+                            <path
+                                d='M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z' />
+                        </svg>
+                    </a>
+                </div>
+                <div class='offcanvas-body p-lg-0'>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Profil</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Departement
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="dept1.html">Pengkaderan</a></li>
+                                <li><a class="dropdown-item" href="dept2.html">Humas</a></li>
+                                <li><a class="dropdown-item" href="dept3.html">Rohani dan Jasmani</a></li>
+                                <li><a class="dropdown-item" href="#">Kesektariatan</a></li>
+                                <li><a class="dropdown-item" href="#">Kesma</a></li>
+                                <li><a class="dropdown-item" href="#">Kewirausahaan</a></li>
+                                <li><a class="dropdown-item" href="#">Minat dan Bakat</a></li>
+                                <li><a class="dropdown-item" href="#">Multimedia</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Akademik
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Pengumuman</a></li>
+                                <li><a class="dropdown-item" href="../PHP/maba23.html">Fomulir Pendataan Mahasiswa
+                                        Baru</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Tanya SI
+                            </a>
+                            <ul class="dropdown-menu">
+                                <a class="dropdown-item" target="_blank"
+                                    href='https://form.jotform.com/230854705051451'>
+                                    SICurhat
+                                </a>
+
+                                <a class="dropdown-item" target="_blank"
+                                    href="https://form.jotform.com/230855079355463">
+                                    AspiraSI
+                                </a>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tentang.html">Berita</a>
+                        </li>
+                    </ul>
+                    <label class="switch">
+                        <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <g fill="#ffd43b">
+                                    <circle r="5" cy="12" cx="12"></circle>
+                                    <path
+                                        d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z">
+                                    </path>
+                                </g>
+                            </svg></span>
+                        <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <g fill="#ffd43b">
+                                    <path
+                                        d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z">
+                                    </path>
+                                </g>
+                            </svg></span>
+                        <input type="checkbox" class="input" id="darkmode">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container mt-5">
+            <div class="d-flex">
+                <div style="width: 80%;">
+                    <div class="content_berita">
+                        <h1>Sukses dilantik, Himpunan mahasiswa sist...</h1>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="aa">
+                            <div class="content_berita2 mx-5">
+
+                            </div>
+                        </div>
+                        <div class="content_berita2 mx-5">
+
+                        </div>
+                    </div>
+                </div>
+                <div style="background-color: #D9D9D9; width: 200px; height: 800px; margin-left: 20px;">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="./../JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

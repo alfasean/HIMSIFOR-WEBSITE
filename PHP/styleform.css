@@ -4,6 +4,16 @@
     box-sizing: border-box;
     
   }
+
+  .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("./../Assets/image7.png");
+    background-color: #032156; 
+    mix-blend-mode: normal; 
+    opacity: 0.5;
+  }
   
   form {
     width: 50%;

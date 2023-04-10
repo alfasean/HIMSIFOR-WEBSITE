@@ -1,3 +1,5 @@
+
+
 const cardWidth = 500,
   degIncrement = 6,
   card = document.getElementById("cardd");

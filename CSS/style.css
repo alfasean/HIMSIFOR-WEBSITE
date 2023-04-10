@@ -1636,3 +1636,22 @@ iframe {
   line-height: 33px;
   text-align: justify;
 }
+
+.container .d-flex .content_berita {
+  background-color: #f2f4f7;
+  border: 1px solid #667085;
+  border-radius: 8px;
+  width: 900px;
+  height: 450px;
+}
+
+.container .d-flex .content_berita2 {
+  background-color: #f2f4f7;
+  border: 1px solid #667085;
+  border-radius: 8px;
+  width: 280px;
+  height: 190px;
+  margin: 50px 0px 0px 0px;
+}
+
+
