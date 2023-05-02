@@ -91,13 +91,13 @@ body #nvb {
 
 }
 
-.jumbotron .logo {
+ .logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.jumbotron .gif {
+.gif {
   opacity: 80% !important;
   background-image: linear-gradient(360deg, #002157 0%, rgba(217, 217, 217, 0) 100%),
     url('./../Assets/gif2.gif');
@@ -347,7 +347,6 @@ body #nvb {
   font-style: normal;
   font-weight: 700;
   font-size: 32.8206px;
-  line-height: 42px;
   color: #FF7F00;
   margin-top: 50px;
   margin-left: 30px;
@@ -413,6 +412,39 @@ body #nvb {
 
 .div-dept {
   margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+  .set {
+    margin-top: 20px;
+  }
+  .apaituhimsi {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+  }  
+  .himsifor-apaitu {
+    margin-top: 20px;
+  }
+  .a-himsi {
+    text-align: center;
+  }
+  .more-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  }
+}
+
+@media (max-width:450px) {
+  .a-himsi {
+    font-size: 20px;
+  }
 }
 
 .departement {
@@ -1658,4 +1690,8 @@ iframe {
   margin: 50px 0px 0px 0px;
 }
 
-
+.podcast-h1 {
+  font-weight: 600;
+  font-size: 30px;
+  color: #101828;
+}

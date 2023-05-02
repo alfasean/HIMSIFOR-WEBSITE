@@ -150,6 +150,13 @@ select {
   box-sizing: border-box;
 }
 
+input[type=date]:required:invalid::-webkit-datetime-edit {
+  color: transparent;
+}
+input[type=date]:focus::-webkit-datetime-edit {
+  color: black !important;
+}
+
 .bulat {
   width: 32.56px;
 height: 32.56px;
@@ -169,7 +176,7 @@ font-feature-settings: 'pnum' on, 'lnum' on;
 color: #002157;
 }
 
-button {
+.button_submit {
   width: 100%;
   height: 40px;
   /* border: none; */
@@ -182,6 +189,6 @@ button {
   color: #FFFFFF !important;
 }
 
-button:hover {
+.button_submit:hover {
   background-color: #45a049;
 }
