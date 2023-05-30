@@ -27,6 +27,7 @@ if ($conn->connect_error) {
     <link rel="stylesheet" href="./../CSS/style.css?v=2">
     <link rel="icon" sizes="200x200" href="./../Assets/himsifor.png" />
     <script src="https://kit.fontawesome.com/9403f07adf.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="769da543-dc22-408e-8538-413285a27b3a";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
@@ -299,6 +300,10 @@ if ($conn->connect_error) {
             <p>Dibuat Oleh Tim Website</p>
         </div>
     </footer>
+
+    <div class="back-to-top">
+        <a style="color: white;"> <i class="fa fa-angle-double-up"></i></a>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>

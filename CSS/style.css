@@ -12,6 +12,11 @@ body #nvb {
   background-color: #fff !important;
 }
 
+.nav-link {
+  color: #475467 !important;
+  font-weight: 700 !important;
+}
+
 @media (min-width : 992px) {
   .offcanvas {
     visibility      : visible;
@@ -35,6 +40,7 @@ body #nvb {
   }
 
 }
+
 
 html {
   scroll-behavior: smooth;
@@ -798,7 +804,7 @@ a:active {
 .dept1{
   width: 1298.03px;
   height: 364px;
-  margin-top: 197px;
+  margin-top: 80px;
   margin-left: 71px;
   
 }
@@ -1519,6 +1525,10 @@ color: #002157;
   color: rgba(255, 255, 255, 0.12) !important;
 }
 
+.dark .desc-dept {
+  color: #fff !important;
+}
+
 .footer ul li {
   list-style: none;
 }
@@ -1704,4 +1714,36 @@ iframe {
   font-weight: 600;
   font-size: 30px;
   color: #101828;
+}
+
+
+.back-to-top {
+  position: fixed;
+  right: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background-color: #2b4865;
+  opacity: 0;
+  border-radius: 50%;
+  transition: 0.2s ease-in-out;
+  z-index: 20px;
+  cursor: pointer;
+}
+
+.back-to-top.show {
+  bottom: 20px;
+  opacity: 1;
+}
+
+.back-to-top svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 1px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
 }

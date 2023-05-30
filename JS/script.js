@@ -1,3 +1,18 @@
+var backToTop = document.querySelector(".back-to-top");
+
+window.addEventListener("scroll", () => {
+  if (this.scrollY >= 450) {
+    backToTop.classList.add("show");
+
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0 });
+    });
+  } else {
+    backToTop.classList.remove("show");
+  }
+});
+
+
 function showContent() {
   document.getElementById("content").style.display="block"
   // document.getElementById("showContent").style.display="none"
@@ -176,10 +191,20 @@ const optionsContainer = document.querySelector(".options-container");
 
 const optionsList = document.querySelectorAll(".option");
 
+let isOptionsVisible = false; // Menyimpan status tampilan saat ini
+
 selected.addEventListener("click", () => {
-  // optionsContainer.classList.toggle("active");
-  document.getElementById("haha").style.display="block"
+  if (isOptionsVisible) {
+    // Jika opsi sedang ditampilkan, sembunyikan
+    optionsContainer.style.display = "none";
+    isOptionsVisible = false;
+  } else {
+    // Jika opsi sedang disembunyikan, tampilkan
+    optionsContainer.style.display = "block";
+    isOptionsVisible = true;
+  }
 });
+
 
 // optionsList.forEach(o => {
 //   o.addEventListener("click", () => {
