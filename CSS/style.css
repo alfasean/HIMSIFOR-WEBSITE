@@ -455,6 +455,31 @@ html {
   justify-content: center;
   margin-top: 30px;
   }
+  .dept-p1 {
+    width: 80% !important;
+  }
+  .dept-p2 h1 {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 28px !important;
+  }
+  .dept-p2 h3 {
+    font-size: 20px !important;
+    text-align: center !important;
+    margin-left: -15px;
+    color: #354765 !important;
+  }
+
+  .pengkaderan-img {
+    width: 80%  !important;
+    margin-top: -80px;
+  }
+  .dept-dept {
+    width: 100% !important;
+  }
+  .dept-container {
+    width: 100% !important;
+  }
 }
 
 @media (max-width:450px) {
@@ -801,21 +826,8 @@ a:active {
   z-index: -1;
 }
 
-.dept1{
-  width: 1298.03px;
-  height: 364px;
-  margin-top: 80px;
-  margin-left: 71px;
-  
-}
-
-.dept-p{
-  display: flex;
-}
-
 .dept-p1{
   background-color: #002157;
-  width: 491.11px;
   height: 287px;
   border-radius: 7px;
   text-align: center;
@@ -858,33 +870,30 @@ a:active {
 }
 
 .dept-p2 {
-  margin-left: 34px;
+  margin-left: 30px;
 }
+
 .dept-p2  h1{
   font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 48px;
-line-height: 75px;
-letter-spacing: -0.015em;
-color: #002157;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  color: #002157;
 }
 
 .dept-p2 h3 {
-  width: 614px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 25px;
-  line-height: 41px;
-  letter-spacing: -0.015em;
   color: #354765;
-  position: absolute;
+  text-align: justify;
 }
 
 .pengkaderan-img {
   filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.15));
   border-radius: 10px;
+  width: 60%;
 }
 
 .humas-img {
@@ -1076,13 +1085,13 @@ margin-right: 20px;}
 }
 
 .dept-container {
-  padding: 32px;
-  margin-left: 195px;
+  margin-top: 20px;
+  width: 100%;
 }
 
 .select-box {
   display: flex;
-  width: 1010px;
+  width: 100%;
   flex-direction: column;
 }
 
@@ -1190,10 +1199,7 @@ margin-right: 20px;}
   display: none;
 }
 
-.dept-col {
-   display: flex;
-   margin-left: 129px;
-}
+
 .bg-dep1 {
   position: absolute;
   left: 980px;
