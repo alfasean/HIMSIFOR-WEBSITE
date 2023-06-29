@@ -11,6 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/9403f07adf.js" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript">
         window.$crisp = [];
         window.CRISP_WEBSITE_ID = "769da543-dc22-408e-8538-413285a27b3a";
@@ -25,9 +26,9 @@
 </head>
 
 <body style="background-color: #ECF2FE;">
-    <nav class='navbar navbar-expand-lg' id="nvb">
+    <nav class='navbar navbar-expand-lg fixed-top mb-5' id="nvb" style="background-color: #fff;">
         <div class='container'>
-            <a class="navbar-brand d-flex" href="#">
+            <a class="navbar-brand d-flex" href="./../index.html">
                 <img src="./../Assets/himsifor horizontal.png" alt="Logo"
                     class="d-inline-block align-text-top hima-logo" style="width: 200px; height: 50px;">
                 <img src="./../Assets/dark.png" alt="Logo" class="d-inline-block align-text-top hima-logo-dark"
@@ -56,7 +57,7 @@
                 <div class='offcanvas-body p-lg-0'>
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Profil</a>
+                            <a class="nav-link" href="tentang.html">Profil</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -64,14 +65,15 @@
                                 Departement
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="dept1.html">Pengkaderan</a></li>
-                                <li><a class="dropdown-item" href="dept2.html">Humas</a></li>
-                                <li><a class="dropdown-item" href="dept3.html">Rohani dan Jasmani</a></li>
-                                <li><a class="dropdown-item" href="#">Kesektariatan</a></li>
-                                <li><a class="dropdown-item" href="#">Kesma</a></li>
-                                <li><a class="dropdown-item" href="#">Kewirausahaan</a></li>
-                                <li><a class="dropdown-item" href="#">Minat dan Bakat</a></li>
-                                <li><a class="dropdown-item" href="#">Multimedia</a></li>
+                              <li><a class="dropdown-item" href="non-departement.html">KSB</a></li>
+                                <li><a class="dropdown-item" href="departement-pengkaderan.html">Pengkaderan</a></li>
+                                <li><a class="dropdown-item" href="departement-hubungan-masyarakat.html">Humas</a></li>
+                                <li><a class="dropdown-item" href="departement-kerohanian.html">Rohani dan Jasmani</a></li>
+                                <li><a class="dropdown-item" href="departement-kesektariatan.html">Kesektariatan</a></li>
+                                <li><a class="dropdown-item" href="departement-kesejahteraan-mahasiswa.html">Kesma</a></li>
+                                <li><a class="dropdown-item" href="departement-kewirausahaan-dan-sponsorhip.html">Kewirausahaan</a></li>
+                                <li><a class="dropdown-item" href="departement-minat-dan-bakat.html">Minat dan Bakat</a></li>
+                                <li><a class="dropdown-item" href="departement-multimedia.html">Multimedia</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -81,8 +83,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Pengumuman</a></li>
-                                <li><a class="dropdown-item" href="../PHP/maba23.html">Fomulir Pendataan Mahasiswa
-                                        Baru</a></li>
+                                <li><a class="dropdown-item" href="#">Fomulir Pendataan Mahasiswa Baru</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -95,7 +96,7 @@
                                     href='https://form.jotform.com/230854705051451'>
                                     SICurhat
                                 </a>
-
+    
                                 <a class="dropdown-item" target="_blank"
                                     href="https://form.jotform.com/230855079355463">
                                     AspiraSI
@@ -103,7 +104,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="tentang.html">Berita</a>
+                            <a class="nav-link" href="#">Berita</a>
                         </li>
                     </ul>
                     <label class="switch">
@@ -159,15 +160,12 @@
 
         </div>
     </section>
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./../JS/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
 
-    <div class="back-to-top">
-        <a style="color: white;"> <i class="fa fa-angle-double-up"></i></a>
-    </div>
 </body>
 
 </html>

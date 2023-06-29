@@ -1,23 +1,35 @@
-var backToTop = document.querySelector(".back-to-top");
+$(window).on('load', function () {
+	/**
+	 * Add class by document path
+	 * @param  {} 
+	 */
+	$(function () {
+		var CurrentUrl = document.URL;
+		var CurrentUrlEnd = CurrentUrl.split('/').filter(Boolean).pop();
 
-window.addEventListener("scroll", () => {
-  if (this.scrollY >= 450) {
-    backToTop.classList.add("show");
+		$('.navbar-nav a').each(function () {
+			var ThisUrl = $(this).attr('href');
+			var ThisUrlEnd = ThisUrl.split('/').filter(Boolean).pop();
+			if (ThisUrlEnd == CurrentUrlEnd) {
+				$(this).addClass('active bg-primary text-light rounded');
+				if ($('.navbar-nav .dropdown-item').hasClass('active')) {
+					$(this).closest('.dropdown').find('.dropdown-toggle').addClass('active');
+				}
+			}
+		});
+	});
+});
 
-    backToTop.addEventListener("click", () => {
-      window.scrollTo({ top: 0 });
-    });
-  } else {
-    backToTop.classList.remove("show");
-  }
+$(document).ready(function () {
+	// Tambahkan kode Anda di sini
 });
 
 
-function showContent() {
-  document.getElementById("content").style.display="block"
-  // document.getElementById("showContent").style.display="none"
-}
-
+// function showContent() {
+//   document.getElementById("content").style.display="block"
+//   // document.getElementById("showContent").style.display="none"
+// }
+AOS.init();
 
 const cardWidth = 500,
   degIncrement = 6,
@@ -126,85 +138,65 @@ var swiper = new Swiper(".slide-container", {
   },
 });
 
-var swiper = new Swiper(".slide-container1", {
-  slidesPerView: 1,
-  spaceBetween: 0,
-  sliderPerGroup: 3,
-  loop: true,
-  centerSlide: "true",
-  fade: "true",
-  grabCursor: "true",
+// var swiper = new Swiper(".slide-container1", {
+//   slidesPerView: 1,
+//   spaceBetween: 0,
+//   sliderPerGroup: 3,
+//   loop: true,
+//   centerSlide: "true",
+//   fade: "true",
+//   grabCursor: "true",
 
-  navigation: {
-    nextEl: ".swiper-navBtn1",
-    prevEl: ".swiper-navBtn1",
-  },
+//   navigation: {
+//     nextEl: ".swiper-navBtn1",
+//     prevEl: ".swiper-navBtn1",
+//   },
 
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    520: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 1,
-    },
-    1000: {
-      slidesPerView: 1,
-    },
-  },
-});
+//   breakpoints: {
+//     0: {
+//       slidesPerView: 1,
+//     },
+//     520: {
+//       slidesPerView: 1,
+//     },
+//     768: {
+//       slidesPerView: 1,
+//     },
+//     1000: {
+//       slidesPerView: 1,
+//     },
+//   },
+// });
 
-var swiper = new Swiper(".slide-container2", {
-  slidesPerView: 3,
-  spaceBetween: 0,
-  sliderPerGroup: 3,
-  loop: true,
-  centerSlide: "true",
-  fade: "true",
-  grabCursor: "true",
+// var swiper = new Swiper(".slide-container2", {
+//   slidesPerView: 3,
+//   spaceBetween: 0,
+//   sliderPerGroup: 3,
+//   loop: true,
+//   centerSlide: "true",
+//   fade: "true",
+//   grabCursor: "true",
 
-  navigation: {
-    nextEl: ".swiper-navBtn2",
-    prevEl: ".swiper-navBtn2",
-  },
+//   navigation: {
+//     nextEl: ".swiper-navBtn2",
+//     prevEl: ".swiper-navBtn2",
+//   },
 
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    520: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    1000: {
-      slidesPerView: 3,
-    },
-  },
-});
-
-const selected = document.querySelector(".selected");
-const optionsContainer = document.querySelector(".options-container");
-
-const optionsList = document.querySelectorAll(".option");
-
-let isOptionsVisible = false; // Menyimpan status tampilan saat ini
-
-selected.addEventListener("click", () => {
-  if (isOptionsVisible) {
-    // Jika opsi sedang ditampilkan, sembunyikan
-    optionsContainer.style.display = "none";
-    isOptionsVisible = false;
-  } else {
-    // Jika opsi sedang disembunyikan, tampilkan
-    optionsContainer.style.display = "block";
-    isOptionsVisible = true;
-  }
-});
-
+//   breakpoints: {
+//     0: {
+//       slidesPerView: 1,
+//     },
+//     520: {
+//       slidesPerView: 1,
+//     },
+//     768: {
+//       slidesPerView: 2,
+//     },
+//     1000: {
+//       slidesPerView: 3,
+//     },
+//   },
+// });
 
 // optionsList.forEach(o => {
 //   o.addEventListener("click", () => {

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Himsifor Unsrat</title>
+  <link rel="icon" sizes="200x200" href="./../Assets/himsifor.png" />
+  <link rel="stylesheet" href="./../CSS/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./../CSS/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/9403f07adf.js" crossorigin="anonymous"></script>
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript">
+    window.$crisp = [];
+    window.CRISP_WEBSITE_ID = "769da543-dc22-408e-8538-413285a27b3a";
+    (function () {
+      d = document;
+      s = d.createElement("script");
+      s.src = "https://client.crisp.chat/l.js";
+      s.async = 1;
+      d.getElementsByTagName("head")[0].appendChild(s);
+    })();
+  </script>
+
+</head>
+
+<body>
+  <nav class='navbar navbar-expand-lg fixed-top mb-5' id="nvb" style="background-color: #fff;">
+    <div class='container'>
+        <a class="navbar-brand d-flex" href="./../index.html">
+            <img src="./../Assets/himsifor horizontal.png" alt="Logo"
+                class="d-inline-block align-text-top hima-logo" style="width: 200px; height: 50px;">
+            <img src="./../Assets/dark.png" alt="Logo" class="d-inline-block align-text-top hima-logo-dark"
+                style="width: 200px; height: 50px;">
+        </a>
+        <button class='btn navbar-toggler border-3 px-2' type='button' data-bs-toggle='offcanvas'
+            data-bs-target='#offcanvasExample' aria-controls='offcanvasExample'>
+            <img style='width: 30px' src='./../Assets/text-center.svg' alt='menu icon' id="menu_icon">
+        </button>
+        <div class='offcanvas offcanvas-start-lg' tabindex='-1' id='offcanvasExample'
+            aria-labelledby='offcanvasExampleLabel'>
+            <div class='offcanvas-header d-flex d-lg-none'>
+                <img src="./../Assets/himsifor horizontal.png" alt="Logo"
+                    class="d-inline-block align-text-top hima-logo" style="width: 200px; height: 50px;">
+                <img src="./../Assets/dark.png" alt="Logo" class="d-inline-block align-text-top hima-logo-dark"
+                    style="width: 200px; height: 50px;">
+                <a href='javascript:void(0) ' class='text-reset p-0' data-bs-dismiss='offcanvas' aria-label='close'>
+                    <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='#FFFFFF'
+                        class='bi bi-x-circle' viewBox='0 0 16 16'>
+                        <path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z' />
+                        <path
+                            d='M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z' />
+                    </svg>
+                </a>
+            </div>
+            <div class='offcanvas-body p-lg-0'>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="tentang.html">Profil</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Departement
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="non-departement.html">KSB</a></li>
+                            <li><a class="dropdown-item" href="departement-pengkaderan.html">Pengkaderan</a></li>
+                            <li><a class="dropdown-item" href="departement-hubungan-masyarakat.html">Humas</a></li>
+                            <li><a class="dropdown-item" href="departement-kerohanian.html">Rohani dan Jasmani</a></li>
+                            <li><a class="dropdown-item" href="departement-kesektariatan.html">Kesektariatan</a></li>
+                            <li><a class="dropdown-item" href="departement-kesejahteraan-mahasiswa.html">Kesma</a></li>
+                            <li><a class="dropdown-item" href="departement-kewirausahaan-dan-sponsorhip.html">Kewirausahaan</a></li>
+                            <li><a class="dropdown-item" href="departement-minat-dan-bakat.html">Minat dan Bakat</a></li>
+                            <li><a class="dropdown-item" href="departement-multimedia.html">Multimedia</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Akademik
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Pengumuman</a></li>
+                            <li><a class="dropdown-item" href="#">Fomulir Pendataan Mahasiswa Baru</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Tanya SI
+                        </a>
+                        <ul class="dropdown-menu">
+                            <a class="dropdown-item" target="_blank"
+                                href='https://form.jotform.com/230854705051451'>
+                                SICurhat
+                            </a>
+
+                            <a class="dropdown-item" target="_blank"
+                                href="https://form.jotform.com/230855079355463">
+                                AspiraSI
+                            </a>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Berita</a>
+                    </li>
+                </ul>
+                <label class="switch">
+                    <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <g fill="#ffd43b">
+                                <circle r="5" cy="12" cx="12"></circle>
+                                <path
+                                    d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z">
+                                </path>
+                            </g>
+                        </svg></span>
+                    <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <g fill="#ffd43b">
+                                <path
+                                    d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z">
+                                </path>
+                            </g>
+                        </svg></span>
+                    <input type="checkbox" class="input" id="darkmode">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+</nav>
+
+  <div class="container" style="margin-top: 100px;" >
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="team-item">
+          <div class="position-relative overflow-hidden cont-1">
+            <img class="img-fluid" src="./../Assets/KSB 6.png" alt="">
+            <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
+              <a class="btn btn-square mx-1" href="https://www.instagram.com/husmi_rizki/" target="_blank"><i
+                  class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="bg-light text-center p-4 dm">
+            <h5 class="fw-bold mb-0 text">M.H RIZKI PRATAMA</h5>
+            <small class="text">Ketua Umum</small>
+          </div>
+        </div>
+      </div>
+      <div class="dept-p2 col-lg-7 col-md-7 mx-2 mt-2">
+        <h1>NON DEPARTEMENT</h1>
+        <h3 class="desc-dept">Non-departement adalah sebuah entitas dalam sebuah organisasi mahasiswa yang terdiri dari anggota dari berbagai departemen yang bergabung untuk menciptakan lingkungan inklusif dan kolaboratif di luar kegiatan akademik. Non-departement memiliki struktur kepengurusan yang terdiri dari Ketua, Wakil Ketua, Sekretaris, dan Bendahara.</h3>
+      </div>
+    </div>
+  </div>
+
+    <div class="container">
+      <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h1 class="mb-5 text-team col-md-4">OUR <span style="color: 
+            #FF7F00;">TEAM</span></h1>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="team-item">
+            <div class="position-relative overflow-hidden">
+              <img class="img-fluid" src="./../Assets/KSB 8.png" alt="">
+              <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
+                <a class="btn btn-square mx-1" href="https://www.instagram.com/pinaxious/" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="bg-light text-center p-4 dm">
+              <h5 class="fw-bold mb-0 text">Octavina Rempas</h5>
+              <small class="text">Wakil Ketua</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="team-item">
+            <div class="position-relative overflow-hidden">
+              <img class="img-fluid" src="./../Assets/KSB 9.png" alt="">
+              <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
+                <a class="btn btn-square mx-1" href="https://www.instagram.com/yoitsaldyyy/" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="bg-light text-center p-4 dm">
+              <h5 class="fw-bold mb-0 text">Rizaldy Mustakim</h5>
+              <small class="text">Sekretaris</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="team-item">
+            <div class="position-relative overflow-hidden">
+              <img class="img-fluid" src="./../Assets/KSB 7.png" alt="">
+              <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
+                <a class="btn btn-square mx-1" href="https://www.instagram.com/sharontabitaa99/" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="bg-light text-center p-4 dm">
+              <h5 class="fw-bold mb-0 text">Sharon Tabita Sulung</h5>
+              <small class="text">Bendahara</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+      <h1 class="ttl-nondept">Program Kerja Non Department</h1>
+      <div class="container-swiper">
+        <div class="slide-container ">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+              <div class="profile-details">
+                <div class="name-job">
+                  <h3 class="name">Rapat Non-Department</h3>
+                  <h4 class="job">Membahas dan mengevaluasi program kerja</h4>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="profile-details">
+                <div class="name-job">
+                  <h3 class="name">Rapat Kerja</h3>
+                  <h4 class="job">Membahas dan mengevaluasi program kerja tiap department</h4>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="profile-details">
+                <div class="name-job">
+                  <h3 class="name">Pengelolaan Administrasi</h3>
+                  <h4 class="job">Mengelola dan mengarsip administrasi</h4>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="profile-details">
+                <div class="name-job">
+                  <h3 class="name">MUBES (Musyawarah Bersama)</h3>
+                  <h4 class="job">Membahas AD/ART dan pemaparan LPJ</h4>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="profile-details">
+                <div class="name-job">
+                  <h3 class="name">Pengelolaan Keuangan</h3>
+                  <h4 class="job">Mengelola keuangan</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <footer class="footer" style="margin-top:100px;">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.5267647828314!2d124.82771664964885!3d1.4579053616212907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x328774ed79fb50c5%3A0xfa8c06ff4708968c!2sProdi%20Sistem%20Informasi%20FMIPA%20UNSRAT!5e0!3m2!1sid!2sid!4v1679900086941!5m2!1sid!2sid"
+                width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col temukann">
+              <ul id="temukan">
+                <h4 class="title-temukan">Dimana kamu menemukan kami</h4>
+                <li>
+                  <i class="fas fa-location-dot"></i>
+                  <p style="color: #fff">FR5H+5X3, Kleak, Kec. Malalayang, Kota Manado, Sulawesi Utara</p>
+                </li>
+                <li>
+                  <i class="far fa-envelope"></i>
+                  <p style="color: #fff;">si.unsrat@gmail.com</p>
+                </li>
+              </ul>
+            </div>
+            <div class="col temukann mdsos" style="padding-bottom:35px;">
+              <div class="medsos">
+                <h4>Follow us:</h4>
+                <a href="https://www.tiktok.com/@himsifor_unsrat" target="_blank"><i
+                    class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.facebook.com/himsifor.unsrat" target="_blank"><i
+                    class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/himsifor_unsrat/" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@himsifor_unsrat1566" target="_blank"><i
+                    class="fa-brands fa-youtube"></i></a>
+                <p style="color: #5189C6">Thank You For Visiting Our Website</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="fixed-footer">
+          <div class="copyright">Copyright &copy; 2023-2024 Himpunan Mahasiswa Sistem Informasi Unsrat</div>
+          <p>Dibuat Oleh Tim Website</p>
+        </div>
+      </footer>
+
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script src="./../JS/swiper-bundle.min.js"></script>
+      <script src="./../JS/script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+      </script>
+
+</body>
+
+</html>
