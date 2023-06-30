@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Himsifor Unsrat</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="icon" sizes="200x200" href="./../Assets/himsifor.png" />
   <link rel="stylesheet" href="./../CSS/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./../CSS/style.css" />
@@ -30,111 +31,108 @@
 <body>
   <nav class='navbar navbar-expand-lg fixed-top mb-5' id="nvb" style="background-color: #fff;">
     <div class='container'>
-        <a class="navbar-brand d-flex" href="./../index.html">
-            <img src="./../Assets/himsifor horizontal.png" alt="Logo"
-                class="d-inline-block align-text-top hima-logo" style="width: 200px; height: 50px;">
-            <img src="./../Assets/dark.png" alt="Logo" class="d-inline-block align-text-top hima-logo-dark"
-                style="width: 200px; height: 50px;">
-        </a>
-        <button class='btn navbar-toggler border-3 px-2' type='button' data-bs-toggle='offcanvas'
-            data-bs-target='#offcanvasExample' aria-controls='offcanvasExample'>
-            <img style='width: 30px' src='./../Assets/text-center.svg' alt='menu icon' id="menu_icon">
-        </button>
-        <div class='offcanvas offcanvas-start-lg' tabindex='-1' id='offcanvasExample'
-            aria-labelledby='offcanvasExampleLabel'>
-            <div class='offcanvas-header d-flex d-lg-none'>
-                <img src="./../Assets/himsifor horizontal.png" alt="Logo"
-                    class="d-inline-block align-text-top hima-logo" style="width: 200px; height: 50px;">
-                <img src="./../Assets/dark.png" alt="Logo" class="d-inline-block align-text-top hima-logo-dark"
-                    style="width: 200px; height: 50px;">
-                <a href='javascript:void(0) ' class='text-reset p-0' data-bs-dismiss='offcanvas' aria-label='close'>
-                    <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='#000'
-                        class='bi bi-x-circle' viewBox='0 0 16 16'>
-                        <path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z' />
-                        <path
-                            d='M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z' />
-                    </svg>
-                </a>
-            </div>
-            <div class='offcanvas-body p-lg-0'>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="tentang.html">Profil</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Departement
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="non-departement.html">Non Departement</a></li>
-                            <li><a class="dropdown-item" href="departement-pengkaderan.html">Pengkaderan</a></li>
-                            <li><a class="dropdown-item" href="departement-hubungan-masyarakat.html">Hubungan Masyarakat</a></li>
-                            <li><a class="dropdown-item" href="departement-kerohanian.html">Rohani & Jasmani</a></li>
-                            <li><a class="dropdown-item" href="departement-kesektariatan.html">Kesektariatan</a></li>
-                            <li><a class="dropdown-item" href="departement-kesejahteraan-mahasiswa.html">Kesejahteraan Mahasiswa</a></li>
-                            <li><a class="dropdown-item" href="departement-kewirausahaan-dan-sponsorhip.html">Kewirausahaan & Sponsorship</a></li>
-                            <li><a class="dropdown-item" href="departement-minat-dan-bakat.html">Minat & Bakat</a></li>
-                            <li><a class="dropdown-item" href="departement-multimedia.html">Multimedia & Jurnalistik</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Akademik
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./../HTML/pengumuman.html">Pengumuman</a></li>
-                            <li><a class="dropdown-item" href="./../PHP/maba23.php">Fomulir Pendataan Mahasiswa Baru</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Tanya SI
-                        </a>
-                        <ul class="dropdown-menu">
-                            <a class="dropdown-item" target="_blank"
-                                href='https://form.jotform.com/230854705051451'>
-                                SICurhat
-                            </a>
-
-                            <a class="dropdown-item" target="_blank"
-                                href="https://form.jotform.com/230855079355463">
-                                AspiraSI
-                            </a>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Berita</a>
-                    </li>
-                </ul>
-                <label class="switch">
-                    <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <g fill="#ffd43b">
-                                <circle r="5" cy="12" cx="12"></circle>
-                                <path
-                                    d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z">
-                                </path>
-                            </g>
-                        </svg></span>
-                    <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                            <g fill="#ffd43b">
-                                <path
-                                    d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z">
-                                </path>
-                            </g>
-                        </svg></span>
-                    <input type="checkbox" class="input" id="darkmode">
-                    <span class="slider"></span>
-                </label>
-            </div>
+      <a class="navbar-brand d-flex" href="./../index.html">
+        <img src="./../Assets/himsifor horizontal.png" alt="Logo" class="d-inline-block align-text-top hima-logo"
+          style="width: 200px; height: 50px;">
+        <img src="./../Assets/dark.png" alt="Logo" class="d-inline-block align-text-top hima-logo-dark"
+          style="width: 200px; height: 50px;">
+      </a>
+      <button class='btn navbar-toggler border-3 px-2' type='button' data-bs-toggle='offcanvas'
+        data-bs-target='#offcanvasExample' aria-controls='offcanvasExample'>
+        <img style='width: 30px' src='./../Assets/text-center.svg' alt='menu icon' id="menu_icon">
+      </button>
+      <div class='offcanvas offcanvas-start-lg' tabindex='-1' id='offcanvasExample'
+        aria-labelledby='offcanvasExampleLabel'>
+        <div class='offcanvas-header d-flex d-lg-none'>
+          <img src="./../Assets/himsifor horizontal.png" alt="Logo" class="d-inline-block align-text-top hima-logo"
+            style="width: 200px; height: 50px;">
+          <img src="./../Assets/dark.png" alt="Logo" class="d-inline-block align-text-top hima-logo-dark"
+            style="width: 200px; height: 50px;">
+          <a href='javascript:void(0) ' class='text-reset p-0' data-bs-dismiss='offcanvas' aria-label='close'>
+            <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='#000' class='bi bi-x-circle'
+              viewBox='0 0 16 16'>
+              <path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z' />
+              <path
+                d='M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z' />
+            </svg>
+          </a>
         </div>
+        <div class='offcanvas-body p-lg-0'>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tentang.html">Profil</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Departement
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="non-departement.html">Non Departement</a></li>
+                <li><a class="dropdown-item" href="departement-pengkaderan.html">Pengkaderan</a></li>
+                <li><a class="dropdown-item" href="departement-hubungan-masyarakat.html">Hubungan Masyarakat</a></li>
+                <li><a class="dropdown-item" href="departement-kerohanian.html">Rohani & Jasmani</a></li>
+                <li><a class="dropdown-item" href="departement-kesektariatan.html">Kesektariatan</a></li>
+                <li><a class="dropdown-item" href="departement-kesejahteraan-mahasiswa.html">Kesejahteraan Mahasiswa</a>
+                </li>
+                <li><a class="dropdown-item" href="departement-kewirausahaan-dan-sponsorhip.html">Kewirausahaan &
+                    Sponsorship</a></li>
+                <li><a class="dropdown-item" href="departement-minat-dan-bakat.html">Minat & Bakat</a></li>
+                <li><a class="dropdown-item" href="departement-multimedia.html">Multimedia & Jurnalistik</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Akademik
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./../HTML/pengumuman.html">Pengumuman</a></li>
+                <li><a class="dropdown-item" href="./../PHP/maba23.php">Fomulir Pendataan Mahasiswa Baru</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tanya SI
+              </a>
+              <ul class="dropdown-menu">
+                <a class="dropdown-item" target="_blank" href='https://form.jotform.com/230854705051451'>
+                  SICurhat
+                </a>
+
+                <a class="dropdown-item" target="_blank" href="https://form.jotform.com/230855079355463">
+                  AspiraSI
+                </a>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Berita</a>
+            </li>
+          </ul>
+          <label class="switch">
+            <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g fill="#ffd43b">
+                  <circle r="5" cy="12" cx="12"></circle>
+                  <path
+                    d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z">
+                  </path>
+                </g>
+              </svg></span>
+            <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                <g fill="#ffd43b">
+                  <path
+                    d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z">
+                  </path>
+                </g>
+              </svg></span>
+            <input type="checkbox" class="input" id="darkmode">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
     </div>
-</nav>
+  </nav>
 
   <img class="bg-dep" src="./../Assets/shape1.png">
   <!-- <section class="container mt-5">
@@ -158,7 +156,7 @@
 
   <div class="container" style="margin-top: 100px;">
     <div class="row d-flex justify-content-center align-items-center">
-      <div class="col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="col-lg-4 col-md-4 wow fadeInUp" data-aos="fade-up">
         <div class="team-item">
           <div class="position-relative overflow-hidden cont-1">
             <img class="img-fluid" src="./../Assets/depart 4.png" alt="">
@@ -173,9 +171,11 @@
           </div>
         </div>
       </div>
-      <div class="dept-p2 col-lg-7 col-md-7 mx-2 mt-2">
-        <h1>DEPARTEMENT KESEKTARIATAN</h1>
-        <h3 class="desc-dept"> Departemen kesekretariatan, sebuah departemen yang bernaung di himsifor yang melakukan tugasnya berupa pengelolaan sekretariat hima yang dimana didalamnya terdapat berupa inventaris sarana dan prasarana hima serta pengarsipan surat keluar dan masuknya di himpunan mahasiswa.</h3>
+      <div class="dept-p2 col-lg-7 col-md-7 mx-2 mt-2" data-aos="fade-up">
+        <h1 class="text-dm">DEPARTEMENT KESEKTARIATAN</h1>
+        <h3 class="desc-dept"> Departemen kesekretariatan, sebuah departemen yang bernaung di himsifor yang melakukan
+          tugasnya berupa pengelolaan sekretariat hima yang dimana didalamnya terdapat berupa inventaris sarana dan
+          prasarana hima serta pengarsipan surat keluar dan masuknya di himpunan mahasiswa.</h3>
       </div>
     </div>
   </div>
@@ -185,11 +185,11 @@
   <div class="container-xxl mt-5 py-5">
     <div class="container">
       <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-        <h1 class="mb-5 text-team col-md-4">OUR <span style="color: 
+        <h1 class="mb-5 text-team col-md-4" data-aos="fade-up">OUR <span style="color: 
           #FF7F00;">TEAM</span></h1>
       </div>
       <div class="row g-4">
-        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-aos="zoom-in">
           <div class="team-item">
             <div class="position-relative overflow-hidden">
               <img class="img-fluid" src="./../Assets/user.png" alt="">
@@ -204,7 +204,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-aos="zoom-in">
           <div class="team-item">
             <div class="position-relative overflow-hidden">
               <img class="img-fluid" src="./../Assets/kesek/IMG-20230308-WA0028 - JESITA GRACE LALAMENTIK.jpg" alt="">
@@ -219,7 +219,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-aos="zoom-in">
           <div class="team-item">
             <div class="position-relative overflow-hidden">
               <img class="img-fluid" src="./../Assets/user.png" alt="">
@@ -234,7 +234,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-aos="zoom-in">
           <div class="team-item">
             <div class="position-relative overflow-hidden">
               <img class="img-fluid" src="./../Assets/user.png" alt="">
@@ -249,7 +249,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-aos="zoom-in">
           <div class="team-item">
             <div class="position-relative overflow-hidden">
               <img class="img-fluid" src="./../Assets/kesek/profil - Christian Repi.jpg" alt="">
@@ -264,7 +264,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-aos="zoom-in">
           <div class="team-item">
             <div class="position-relative overflow-hidden">
               <img class="img-fluid" src="./../Assets/kesek/IMG_20230624_134114_334 - Rahma Rahma.jpg" alt="">
@@ -279,7 +279,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-aos="zoom-in">
           <div class="team-item">
             <div class="position-relative overflow-hidden">
               <img class="img-fluid" src="./../Assets/user.png" alt="">
@@ -294,13 +294,12 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-aos="zoom-in">
           <div class="team-item">
             <div class="position-relative overflow-hidden">
               <img class="img-fluid" src="./../Assets/user.png" alt="">
               <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
-                <a class="btn btn-square mx-1" href="#" target="_blank"><i
-                    class="fab fa-instagram"></i></a>
+                <a class="btn btn-square mx-1" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
               </div>
             </div>
             <div class="bg-light text-center p-4 dm">
@@ -309,7 +308,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-aos="zoom-in">
           <div class="team-item">
             <div class="position-relative overflow-hidden">
               <img class="img-fluid" src="./../Assets/kesek/IMG-20210908-WA0197 - SI_Kerenh Sutjipto.jpg" alt="">
@@ -325,7 +324,7 @@
           </div>
         </div>
         <!-- <img class="bg-dep1" src="./../Assets/shape2.png"> -->
-        <div class="col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="col-lg-4 col-md-4 wow fadeInUp" data-aos="zoom-in">
           <div class="team-item">
             <div class="position-relative overflow-hidden">
               <img class="img-fluid" src="./../Assets/user.png" alt="">
@@ -340,7 +339,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="col-lg-4 col-md-4 wow fadeInUp" data-aos="zoom-in">
           <div class="team-item">
             <div class="position-relative overflow-hidden">
               <img class="img-fluid" src="./../Assets/user.png" alt="">
@@ -355,13 +354,12 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="col-lg-4 col-md-4 wow fadeInUp" data-aos="zoom-in">
           <div class="team-item">
             <div class="position-relative overflow-hidden">
               <img class="img-fluid" src="./../Assets/user.png" alt="">
               <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
-                <a class="btn btn-square mx-1" href="#" target="_blank"><i
-                    class="fab fa-instagram"></i></a>
+                <a class="btn btn-square mx-1" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
               </div>
             </div>
             <div class="bg-light text-center p-4 dm">
@@ -370,7 +368,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="col-lg-4 col-md-4 wow fadeInUp" data-aos="zoom-in">
           <div class="team-item">
             <div class="position-relative overflow-hidden">
               <img class="img-fluid" src="./../Assets/user.png" alt="">
@@ -385,13 +383,12 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="col-lg-4 col-md-4 wow fadeInUp" data-aos="zoom-in">
           <div class="team-item">
             <div class="position-relative overflow-hidden">
               <img class="img-fluid" src="./../Assets/user.png" alt="">
               <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
-                <a class="btn btn-square mx-1" href="#" target="_blank"><i
-                    class="fab fa-instagram"></i></a>
+                <a class="btn btn-square mx-1" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
               </div>
             </div>
             <div class="bg-light text-center p-4 dm">
@@ -405,10 +402,10 @@
     <!-- Team End -->
 
     <section class="container ttl-dept1">
-      <h1 class="judul-content content-size">PROGRAM KERJA DEPARTEMENT KESEKTARIATAN</h1>
+      <h1 class="judul-content content-size" data-aos="fade-up">PROGRAM KERJA DEPARTEMENT KESEKTARIATAN</h1>
     </section>
 
-    <div class="container-swiper">
+    <div class="container-swiper" data-aos="fade-up">
       <div class="slide-container ">
         <div class="card-wrapper swiper-wrapper">
           <div class="card swiper-slide">
@@ -465,65 +462,65 @@
   </div>
 
 
-    <footer class="footer" style="margin-top:100px;">
-      <div class="container text-center">
-          <div class="row">
-              <div class="col">
-                  <div class="d-flex justify-content-center align-items-center">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.5267647828314!2d124.82771664964885!3d1.4579053616212907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x328774ed79fb50c5%3A0xfa8c06ff4708968c!2sProdi%20Sistem%20Informasi%20FMIPA%20UNSRAT!5e0!3m2!1sid!2sid!4v1679900086941!5m2!1sid!2sid"
-                          style="border:0;" allowfullscreen="" loading="lazy"
-                          referrerpolicy="no-referrer-when-downgrade"></iframe>
-                  </div>
-              </div>
-              <div class="col temukann">
-                  <ul id="temukan">
-                      <h4 class="title-temukan">Dimana kamu menemukan kami</h4>
-                      <li>
-                          <i class="fas fa-location-dot"></i>
-                          <p style="color: #fff">FR5H+5X3, Kleak, Kec. Malalayang, Kota Manado, Sulawesi Utara</p>
-                      </li>
-                      <li>
-                          <i class="far fa-envelope"></i>
-                          <p style="color: #fff;">si.unsrat@gmail.com</p>
-                      </li>
-                  </ul>
-              </div>
-              <div class="col temukann mdsos d-flex justify-content-center align-items-center flex-wrap"
-                  style="padding-bottom:35px;">
-                  <div class="medsos">
-                      <h4>Follow us:</h4>
-                      <div class="">
-                          <a href="https://www.tiktok.com/@himsifor_unsrat" target="_blank"><i
-                                  class="fa-brands fa-tiktok"></i></a>
-                          <a href="https://www.instagram.com/himsifor_unsrat/" target="_blank"><i
-                                  class="fa-brands fa-instagram"></i></a>
-                          <a href="https://www.youtube.com/@himsifor_unsrat1566" target="_blank"><i
-                                  class="fa-brands fa-youtube"></i></a>
-                      </div>
-                      <p style="color: #5189C6">Thank You For Visiting Our Website</p>
-                  </div>
-              </div>
+  <footer class="footer" style="margin-top:100px;">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <div class="d-flex justify-content-center align-items-center">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.5267647828314!2d124.82771664964885!3d1.4579053616212907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x328774ed79fb50c5%3A0xfa8c06ff4708968c!2sProdi%20Sistem%20Informasi%20FMIPA%20UNSRAT!5e0!3m2!1sid!2sid!4v1679900086941!5m2!1sid!2sid"
+              style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
-      </div>
-  
-      <div class="fixed-footer">
-          <div class="text-center">
-              <div class="footer-content">
-                  <div class="copyright">
-                      &copy; 2023-2024 Himpunan Mahasiswa Sistem Informasi Unsrat
-                  </div>
-                  <p>Dibuat Oleh Tim Website</p>
-              </div>
+        </div>
+        <div class="col temukann">
+          <ul id="temukan">
+            <h4 class="title-temukan">Dimana kamu menemukan kami</h4>
+            <li>
+              <i class="fas fa-location-dot"></i>
+              <p style="color: #fff">FR5H+5X3, Kleak, Kec. Malalayang, Kota Manado, Sulawesi Utara</p>
+            </li>
+            <li>
+              <i class="far fa-envelope"></i>
+              <p style="color: #fff;">si.unsrat@gmail.com</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col temukann mdsos d-flex justify-content-center align-items-center flex-wrap"
+          style="padding-bottom:35px;">
+          <div class="medsos">
+            <h4>Follow us:</h4>
+            <div class="">
+              <a href="https://www.tiktok.com/@himsifor_unsrat" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="https://www.instagram.com/himsifor_unsrat/" target="_blank"><i
+                  class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.youtube.com/@himsifor_unsrat1566" target="_blank"><i
+                  class="fa-brands fa-youtube"></i></a>
+            </div>
+            <p style="color: #5189C6">Thank You For Visiting Our Website</p>
           </div>
+        </div>
       </div>
+    </div>
+
+    <div class="fixed-footer">
+      <div class="text-center">
+        <div class="footer-content">
+          <div class="copyright">
+            &copy; 2023-2024 Himpunan Mahasiswa Sistem Informasi Unsrat
+          </div>
+          <p>Dibuat Oleh Tim Website</p>
+        </div>
+      </div>
+    </div>
   </footer>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="./../JS/swiper-bundle.min.js"></script>
-    <script src="./../JS/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
-    </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="./../JS/swiper-bundle.min.js"></script>
+  <script src="./../JS/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+  </script>
 
 </body>
 

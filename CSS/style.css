@@ -14,8 +14,17 @@ body {
   transition: .5s;
 }
 
+.navbar-nav .dropdown-menu {
+  width: 380px;
+}
 
 .navbar-nav .nav-link {
+  color: #002157 !important;
+  font-weight: 700 !important;
+  margin: 3px 3px 3px 3px;
+}
+
+.navbar-nav .dropdown-item {
   color: #002157 !important;
   font-weight: 700 !important;
   margin: 3px 3px 3px 3px;
@@ -29,11 +38,25 @@ body {
   margin: 3px 3px 3px 3px;
 }
 
+ .navbar-nav .dropdown-item:hover {
+  background-color: #002157 !important;
+  color: #fff !important;
+  border-radius: 9px;
+  padding: 7px;;
+  margin: 3px 3px 3px 3px;
+}
+
 .navbar-nav .nav-link.active {
   background-color: #002157 !important;
   color: #fff !important;
   border-radius: 9px;
   padding: 7px;
+}
+
+.navbar-nav .dropdown-item.active {
+  background-color: #002157 !important;
+  color: #fff !important;
+  border-radius: 9px;
 }
 
 .dark .svg {
@@ -1350,7 +1373,29 @@ color: #002157;
   color: #fff !important;
 }
 
+.dark .dropdown-menu {
+  background-color: #1B2020 !important;
+}
 
+.dark .dropdown-item {
+  color: #FFF !important;
+}
+
+.dark .nav-link:hover {
+  background-color: #FF7F00 !important;
+}
+
+.dark .dropdown-item:hover {
+  background-color: #FF7F00 !important;
+}
+
+.dark .dropdown-item.active {
+  background-color: #FF7F00 !important;
+}
+
+.dark .nav-link.active {
+  background-color: #FF7F00 !important;
+}
 
 .dark .gif {
   background-repeat: no-repeat !important;
@@ -1399,6 +1444,10 @@ color: #002157;
 }
 
 .dark .text-dept {
+  color: #FF7F00 !important;
+}
+
+.dark .text-dm {
   color: #FF7F00 !important;
 }
 
