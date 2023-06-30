@@ -18,6 +18,7 @@ body {
 .navbar-nav .nav-link {
   color: #002157 !important;
   font-weight: 700 !important;
+  margin: 3px 3px 3px 3px;
 }
 
  .navbar-nav .nav-link:hover {
@@ -25,6 +26,7 @@ body {
   color: #fff !important;
   border-radius: 9px;
   padding: 7px;;
+  margin: 3px 3px 3px 3px;
 }
 
 .navbar-nav .nav-link.active {
@@ -32,6 +34,10 @@ body {
   color: #fff !important;
   border-radius: 9px;
   padding: 7px;
+}
+
+.dark .svg {
+  fill: #fff !important;
 }
 
 @media (min-width : 992px) {
@@ -46,7 +52,7 @@ body {
 
 @media (max-width : 992px) {
   .offcanvas {
-    width : 250px !important;
+    width : 370px !important;
   }
 
   .offcanvas-start-lg {
@@ -561,8 +567,8 @@ html {
 }
 
 .dept-div:hover {
-  transition: all 0.2s ease-in-out;
-  transform: scale(1.1);
+  transition: all 0.2s ease-in-out !important;
+  transform: scale(1.1) !important;
 }
 
 a:link {

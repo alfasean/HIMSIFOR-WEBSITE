@@ -57,9 +57,9 @@ if ($conn->connect_error) {
         
         $conn->close();
         ?>
-    <nav class='navbar navbar-expand-lg' id="nvb">
+    <nav class='navbar navbar-expand-lg fixed-top mb-5' id="nvb" style="background-color: #fff;">
         <div class='container'>
-            <a class="navbar-brand d-flex" href="#">
+            <a class="navbar-brand d-flex" href="./../index.html">
                 <img src="./../Assets/himsifor horizontal.png" alt="Logo"
                     class="d-inline-block align-text-top hima-logo" style="width: 200px; height: 50px;">
                 <img src="./../Assets/dark.png" alt="Logo" class="d-inline-block align-text-top hima-logo-dark"
@@ -76,48 +76,44 @@ if ($conn->connect_error) {
                         class="d-inline-block align-text-top hima-logo" style="width: 200px; height: 50px;">
                     <img src="./../Assets/dark.png" alt="Logo" class="d-inline-block align-text-top hima-logo-dark"
                         style="width: 200px; height: 50px;">
-                    <a href='javascript:void(0) ' class='text-reset p-0' data-bs-dismiss='offcanvas' aria-label='close'>
-                        <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='#FFFFFF'
-                            class='bi bi-x-circle' viewBox='0 0 16 16'>
-                            <path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z' />
-                            <path
-                                d='M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z' />
-                        </svg>
-                    </a>
                 </div>
                 <div class='offcanvas-body p-lg-0'>
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="./../HTML/index.html">Profil</a>
+                            <a class="nav-link" href="./../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tentang.html">Profil</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Departement
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./../HTML/dept1.html">Pengkaderan</a></li>
-                                <li><a class="dropdown-item" href="./../HTML/dept2.html">Humas</a></li>
-                                <li><a class="dropdown-item" href="./../HTML/dept3.html">Rohani dan Jasmani</a></li>
-                                <li><a class="dropdown-item" href="#">Kesektariatan</a></li>
-                                <li><a class="dropdown-item" href="#">Kesma</a></li>
-                                <li><a class="dropdown-item" href="#">Kewirausahaan</a></li>
-                                <li><a class="dropdown-item" href="#">Minat dan Bakat</a></li>
-                                <li><a class="dropdown-item" href="#">Multimedia</a></li>
+                                <li><a class="dropdown-item" href="non-departement.html">KSB</a></li>
+                                <li><a class="dropdown-item" href="departement-pengkaderan.html">Pengkaderan</a></li>
+                                <li><a class="dropdown-item" href="departement-hubungan-masyarakat.html">Humas</a></li>
+                                <li><a class="dropdown-item" href="departement-kerohanian.html">Rohani dan Jasmani</a></li>
+                                <li><a class="dropdown-item" href="departement-kesektariatan.html">Kesektariatan</a></li>
+                                <li><a class="dropdown-item" href="departement-kesejahteraan-mahasiswa.html">Kesma</a></li>
+                                <li><a class="dropdown-item" href="departement-kewirausahaan-dan-sponsorhip.html">Kewirausahaan</a></li>
+                                <li><a class="dropdown-item" href="departement-minat-dan-bakat.html">Minat dan Bakat</a></li>
+                                <li><a class="dropdown-item" href="departement-multimedia.html">Multimedia</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Akademik
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Pengumuman</a></li>
+                                <li><a class="dropdown-item" href="./../HTML/pengumuman.html">Pengumuman</a></li>
                                 <li><a class="dropdown-item" href="./../PHP/maba23.php">Fomulir Pendataan Mahasiswa Baru</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Tanya SI
                             </a>
@@ -134,7 +130,7 @@ if ($conn->connect_error) {
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="tentang.html">Berita</a>
+                            <a class="nav-link" href="#">Berita</a>
                         </li>
                     </ul>
                     <label class="switch">
@@ -256,50 +252,57 @@ if ($conn->connect_error) {
     </div>
 
     <footer class="footer" style="margin-top:100px;">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.5267647828314!2d124.82771664964885!3d1.4579053616212907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x328774ed79fb50c5%3A0xfa8c06ff4708968c!2sProdi%20Sistem%20Informasi%20FMIPA%20UNSRAT!5e0!3m2!1sid!2sid!4v1679900086941!5m2!1sid!2sid"
-                        width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="col temukann">
-                    <ul id="temukan">
-                        <h4 class="title-temukan">Dimana kamu menemukan kami</h4>
-                        <li>
-                            <i class="fas fa-location-dot"></i>
-                            <p style="color: #fff">FR5H+5X3, Kleak, Kec. Malalayang, Kota Manado, Sulawesi Utara</p>
-                        </li>
-                        <li>
-                            <i class="far fa-envelope"></i>
-                            <p style="color: #fff;">si.unsrat@gmail.com</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col temukann mdsos" style="padding-bottom:35px;">
-                    <div class="medsos">
-                        <h4>Follow us:</h4>
-                        <a href="https://www.tiktok.com/@himsifor_unsrat" target="_blank"><i
-                                class="fa-brands fa-tiktok"></i></a>
-                        <a href="https://www.facebook.com/himsifor.unsrat" target="_blank"><i
-                                class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/himsifor_unsrat/" target="_blank"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/@himsifor_unsrat1566" target="_blank"><i
-                                class="fa-brands fa-youtube"></i></a>
-                        <p style="color: #5189C6">Thank You For Visiting Our Website</p>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.5267647828314!2d124.82771664964885!3d1.4579053616212907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x328774ed79fb50c5%3A0xfa8c06ff4708968c!2sProdi%20Sistem%20Informasi%20FMIPA%20UNSRAT!5e0!3m2!1sid!2sid!4v1679900086941!5m2!1sid!2sid"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
-
+                    <div class="col temukann">
+                        <ul id="temukan">
+                            <h4 class="title-temukan">Dimana kamu menemukan kami</h4>
+                            <li>
+                                <i class="fas fa-location-dot"></i>
+                                <p style="color: #fff">FR5H+5X3, Kleak, Kec. Malalayang, Kota Manado, Sulawesi Utara</p>
+                            </li>
+                            <li>
+                                <i class="far fa-envelope"></i>
+                                <p style="color: #fff;">si.unsrat@gmail.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col temukann mdsos d-flex justify-content-center align-items-center flex-wrap"
+                        style="padding-bottom:35px;">
+                        <div class="medsos">
+                            <h4>Follow us:</h4>
+                            <div class="">
+                                <a href="https://www.tiktok.com/@himsifor_unsrat" target="_blank"><i
+                                        class="fa-brands fa-tiktok"></i></a>
+                                <a href="https://www.instagram.com/himsifor_unsrat/" target="_blank"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.youtube.com/@himsifor_unsrat1566" target="_blank"><i
+                                        class="fa-brands fa-youtube"></i></a>
+                            </div>
+                            <p style="color: #5189C6">Thank You For Visiting Our Website</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="fixed-footer">
-            <div class="copyright">Copyright &copy; 2023-2024 Himpunan Mahasiswa Sistem Informasi Unsrat</div>
-            <p>Dibuat Oleh Tim Website</p>
-        </div>
-    </footer>
+        
+            <div class="fixed-footer">
+                <div class="text-center">
+                    <div class="footer-content">
+                        <div class="copyright">
+                            &copy; 2023-2024 Himpunan Mahasiswa Sistem Informasi Unsrat
+                        </div>
+                        <p>Dibuat Oleh Tim Website</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
     <div class="back-to-top">
         <a style="color: white;"> <i class="fa fa-angle-double-up"></i></a>

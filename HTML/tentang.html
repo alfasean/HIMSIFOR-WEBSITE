@@ -12,7 +12,17 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/9403f07adf.js" crossorigin="anonymous"></script>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="769da543-dc22-408e-8538-413285a27b3a";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    <script type="text/javascript">
+        window.$crisp = [];
+        window.CRISP_WEBSITE_ID = "769da543-dc22-408e-8538-413285a27b3a";
+        (function () {
+            d = document;
+            s = d.createElement("script");
+            s.src = "https://client.crisp.chat/l.js";
+            s.async = 1;
+            d.getElementsByTagName("head")[0].appendChild(s);
+        })();
+    </script>
 </head>
 
 <body>
@@ -36,7 +46,7 @@
                     <img src="./../Assets/dark.png" alt="Logo" class="d-inline-block align-text-top hima-logo-dark"
                         style="width: 200px; height: 50px;">
                     <a href='javascript:void(0) ' class='text-reset p-0' data-bs-dismiss='offcanvas' aria-label='close'>
-                        <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='#FFFFFF'
+                        <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='#000'
                             class='bi bi-x-circle' viewBox='0 0 16 16'>
                             <path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z' />
                             <path
@@ -47,37 +57,40 @@
                 <div class='offcanvas-body p-lg-0'>
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
+                            <a class="nav-link" href="./../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="tentang.html">Profil</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Departement
                             </a>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="non-departement.html">KSB</a></li>
+                                <li><a class="dropdown-item" href="non-departement.html">Non Departement</a></li>
                                 <li><a class="dropdown-item" href="departement-pengkaderan.html">Pengkaderan</a></li>
-                                <li><a class="dropdown-item" href="departement-hubungan-masyarakat.html">Humas</a></li>
-                                <li><a class="dropdown-item" href="departement-kerohanian.html">Rohani dan Jasmani</a></li>
+                                <li><a class="dropdown-item" href="departement-hubungan-masyarakat.html">Hubungan Masyarakat</a></li>
+                                <li><a class="dropdown-item" href="departement-kerohanian.html">Rohani & Jasmani</a></li>
                                 <li><a class="dropdown-item" href="departement-kesektariatan.html">Kesektariatan</a></li>
-                                <li><a class="dropdown-item" href="departement-kesejahteraan-mahasiswa.html">Kesma</a></li>
-                                <li><a class="dropdown-item" href="departement-kewirausahaan-dan-sponsorhip.html">Kewirausahaan</a></li>
-                                <li><a class="dropdown-item" href="departement-minat-dan-bakat.html">Minat dan Bakat</a></li>
-                                <li><a class="dropdown-item" href="departement-multimedia.html">Multimedia</a></li>
+                                <li><a class="dropdown-item" href="departement-kesejahteraan-mahasiswa.html">Kesejahteraan Mahasiswa</a></li>
+                                <li><a class="dropdown-item" href="departement-kewirausahaan-dan-sponsorhip.html">Kewirausahaan & Sponsorship</a></li>
+                                <li><a class="dropdown-item" href="departement-minat-dan-bakat.html">Minat & Bakat</a></li>
+                                <li><a class="dropdown-item" href="departement-multimedia.html">Multimedia & Jurnalistik</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Akademik
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Pengumuman</a></li>
-                                <li><a class="dropdown-item" href="#">Fomulir Pendataan Mahasiswa Baru</a></li>
+                                <li><a class="dropdown-item" href="./../HTML/pengumuman.html">Pengumuman</a></li>
+                                <li><a class="dropdown-item" href="./../PHP/maba23.php">Fomulir Pendataan Mahasiswa Baru</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Tanya SI
                             </a>
@@ -266,8 +279,8 @@
                 </div>
 
                 <div class="lh-logo">
-                    <img src="./../Assets/himsifor.png" data-aos="zoom-in-up" alt="Logo" id="cardd" onmousemove="onMouseMove(event)" onmouseleave="onMouseLeave(event)"
-                    style="transition: 0.5s;">
+                    <img src="./../Assets/himsifor.png" data-aos="zoom-in-up" alt="Logo" id="cardd"
+                        onmousemove="onMouseMove(event)" onmouseleave="onMouseLeave(event)" style="transition: 0.5s;">
                 </div>
             </div>
         </div>
@@ -276,69 +289,70 @@
     <section id="sejarah">
         <img src="./../Assets/shape3.png" alt="shape" style="position: absolute; z-index: -1; margin-top: 100px;">
         <div class="container" style="margin-top: 75px;">
-          <h2 class="judul-content sejarah-title" data-aos="zoom-out">
-            Sejarah Himpunan Mahasiswa Sistem Informasi UNSRAT
-          </h2>
-  
-          <div class="sliders-container">
-            <div class="slider-box" data-aos="fade-right">
-              <div class="slider-icon">
-                <i class="fas fa-history"></i>
-              </div>
-              <div class="slider-content">
-                <h3>Tahun 2023</h3>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy
-                  text ever since the 1500s, when an unknown printer took a galley
-                  of type and scrambled it to make a type specimen book. It has
-                  survived not only five centuries, but also the leap into
-                </p>
-              </div>
-            </div>
-            <div class="slider-box" data-aos="fade-right">
-              <div class="slider-icon">
-                <i class="fas fa-history"></i>
-              </div>
-              <div class="slider-content">
-                <h3>Tahun 2022</h3>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy
-                  text ever since the 1500s, when an unknown printer took a galley
-                  of type and scrambled it to make a type specimen book. It has
-                  survived not only five centuries, but also the leap into
-                </p>
-              </div>
-            </div>
-            <div class="slider-box" data-aos="fade-right">
-              <div class="slider-icon">
-                <i class="fas fa-history"></i>
-              </div>
-              <div class="slider-content">
-                <h3>Tahun 2021</h3>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            <h2 class="judul-content sejarah-title" data-aos="zoom-out">
+                Sejarah Himpunan Mahasiswa Sistem Informasi UNSRAT
+            </h2>
 
-    <section class="struktur" style="margin-top: 100px;">
-        <img src="./../Assets/shape4.png" alt="shape" style="position: absolute; z-index: -1;
-        top: 500%;
+            <div class="sliders-container">
+                <div class="slider-box" data-aos="fade-right">
+                    <div class="slider-icon">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <div class="slider-content">
+                        <h3>Tahun 2023</h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy
+                            text ever since the 1500s, when an unknown printer took a galley
+                            of type and scrambled it to make a type specimen book. It has
+                            survived not only five centuries, but also the leap into
+                        </p>
+                    </div>
+                </div>
+                <div class="slider-box" data-aos="fade-right">
+                    <div class="slider-icon">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <div class="slider-content">
+                        <h3>Tahun 2022</h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy
+                            text ever since the 1500s, when an unknown printer took a galley
+                            of type and scrambled it to make a type specimen book. It has
+                            survived not only five centuries, but also the leap into
+                        </p>
+                    </div>
+                </div>
+                <div class="slider-box" data-aos="fade-right">
+                    <div class="slider-icon">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <div class="slider-content">
+                        <h3>Tahun 2021</h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <img src="./../Assets/shape4.png" alt="shape" style="position: absolute; z-index: -1;
+        top: 450%;
         right: 16px;">
+    <section class="struktur" style="margin-top: 100px;">
         <div class="judul">
             <div class="judul container d-flex">
-                <p class="judul-content text-center justify-content-center align-items-center" data-aos="zoom-out">Struktur Organisasi
+                <p class="judul-content text-center justify-content-center align-items-center" data-aos="zoom-out">
+                    Struktur Organisasi
                     Himpunan Mahasiswa Sistem Informasi UNSRAT</p>
             </div>
         </div>
         <div class="gmbr-struktur container">
-            <div class="d-flex justify-content-center align-items-center" data-aos="zoom-in-up"     >
+            <div class="d-flex justify-content-center align-items-center" data-aos="zoom-in-up">
                 <img src="./../Assets/struktur orga.png" width="999" height="530" alt="mobile" class="gmbrr">
             </div>
         </div>
@@ -348,10 +362,12 @@
         <div class="container text-center">
             <div class="row">
                 <div class="col">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.5267647828314!2d124.82771664964885!3d1.4579053616212907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x328774ed79fb50c5%3A0xfa8c06ff4708968c!2sProdi%20Sistem%20Informasi%20FMIPA%20UNSRAT!5e0!3m2!1sid!2sid!4v1679900086941!5m2!1sid!2sid"
-                        width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.5267647828314!2d124.82771664964885!3d1.4579053616212907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x328774ed79fb50c5%3A0xfa8c06ff4708968c!2sProdi%20Sistem%20Informasi%20FMIPA%20UNSRAT!5e0!3m2!1sid!2sid!4v1679900086941!5m2!1sid!2sid"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
                 <div class="col temukann">
                     <ul id="temukan">
@@ -361,32 +377,38 @@
                             <p style="color: #fff">FR5H+5X3, Kleak, Kec. Malalayang, Kota Manado, Sulawesi Utara</p>
                         </li>
                         <li>
-                                <i class="far fa-envelope"></i>
-                                <p style="color: #fff;">si.unsrat@gmail.com</p>
+                            <i class="far fa-envelope"></i>
+                            <p style="color: #fff;">si.unsrat@gmail.com</p>
                         </li>
                     </ul>
                 </div>
-                <div class="col temukann mdsos" style="padding-bottom:35px;">
+                <div class="col temukann mdsos d-flex justify-content-center align-items-center flex-wrap"
+                    style="padding-bottom:35px;">
                     <div class="medsos">
                         <h4>Follow us:</h4>
-                        <a href="https://www.tiktok.com/@himsifor_unsrat" target="_blank"><i
-                                class="fa-brands fa-tiktok"></i></a>
-                        <a href="https://www.facebook.com/himsifor.unsrat" target="_blank"><i
-                                class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/himsifor_unsrat/" target="_blank"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/@himsifor_unsrat1566" target="_blank"><i
-                                class="fa-brands fa-youtube"></i></a>
+                        <div class="">
+                            <a href="https://www.tiktok.com/@himsifor_unsrat" target="_blank"><i
+                                    class="fa-brands fa-tiktok"></i></a>
+                            <a href="https://www.instagram.com/himsifor_unsrat/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/@himsifor_unsrat1566" target="_blank"><i
+                                    class="fa-brands fa-youtube"></i></a>
+                        </div>
                         <p style="color: #5189C6">Thank You For Visiting Our Website</p>
                     </div>
-
                 </div>
             </div>
         </div>
 
         <div class="fixed-footer">
-            <div class="copyright">Copyright &copy; 2023-2024 Himpunan Mahasiswa Sistem Informasi Unsrat</div>
-            <p>Dibuat Oleh Tim Website</p>
+            <div class="text-center">
+                <div class="footer-content">
+                    <div class="copyright">
+                        &copy; 2023-2024 Himpunan Mahasiswa Sistem Informasi Unsrat
+                    </div>
+                    <p>Dibuat Oleh Tim Website</p>
+                </div>
+            </div>
         </div>
     </footer>
 
