@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Himsifor Unsrat</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="icon" sizes="200x200" href="./../Assets/himsifor.png" />
-    <link rel="stylesheet" href="./../CSS/style.css">
+    <link rel="icon" sizes="200x200" href="Assets/himsifor.png" />
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/9403f07adf.js" crossorigin="anonymous"></script>
@@ -28,30 +31,30 @@
     <nav class='navbar navbar-expand-lg fixed-top mb-5' id="nvb" style="background-color: #fff;">
         <div class='container'>
             <a class="navbar-brand d-flex" href="index.html">
-                <img src="./../Assets/himsifor horizontal.png" alt="Logo"
-                    class="d-inline-block align-text-top hima-logo" style="width: 200px; height: 50px;">
-                <img src="./../Assets/dark.png" alt="Logo" class="d-inline-block align-text-top hima-logo-dark"
+                <img src="Assets/himsifor horizontal.png" alt="Logo" class="d-inline-block align-text-top hima-logo"
+                    style="width: 200px; height: 50px;">
+                <img src="Assets/dark.png" alt="Logo" class="d-inline-block align-text-top hima-logo-dark"
                     style="width: 200px; height: 50px;">
             </a>
             <button class='btn navbar-toggler border-3 px-2' type='button' data-bs-toggle='offcanvas'
                 data-bs-target='#offcanvasExample' aria-controls='offcanvasExample'>
-                <img style='width: 30px' src='./../Assets/text-center.svg' alt='menu icon' id="menu_icon">
+                <img style='width: 30px' src='Assets/text-center.svg' alt='menu icon' id="menu_icon">
             </button>
             <div class='offcanvas offcanvas-start-lg' tabindex='-1' id='offcanvasExample'
                 aria-labelledby='offcanvasExampleLabel'>
                 <div class='offcanvas-header d-flex d-lg-none'>
-                    <img src="./../Assets/himsifor horizontal.png" alt="Logo"
-                        class="d-inline-block align-text-top hima-logo" style="width: 200px; height: 50px;">
-                    <img src="./../Assets/dark.png" alt="Logo" class="d-inline-block align-text-top hima-logo-dark"
+                    <img src="Assets/himsifor horizontal.png" alt="Logo" class="d-inline-block align-text-top hima-logo"
                         style="width: 200px; height: 50px;">
-                        <a href='javascript:void(0) ' class='text-reset p-0' data-bs-dismiss='offcanvas' aria-label='close'>
-                            <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='#000'
-                                class='bi bi-x-circle svg' viewBox='0 0 16 16'>
-                                <path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z' />
-                                <path
-                                    d='M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z' />
-                            </svg>
-                        </a>
+                    <img src="Assets/dark.png" alt="Logo" class="d-inline-block align-text-top hima-logo-dark"
+                        style="width: 200px; height: 50px;">
+                    <a href='javascript:void(0) ' class='text-reset p-0' data-bs-dismiss='offcanvas' aria-label='close'>
+                        <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='#000'
+                            class='bi bi-x-circle svg' viewBox='0 0 16 16'>
+                            <path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z' />
+                            <path
+                                d='M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z' />
+                        </svg>
+                    </a>
                 </div>
                 <div class='offcanvas-body p-lg-0'>
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -62,35 +65,42 @@
                             <a class="nav-link" href="HTML/tentang.html">Profil</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Departement
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="HTML/non-departement.html">Non Departement</a></li>
-                                <li><a class="dropdown-item" href="HTML/departement-pengkaderan.html">Pengkaderan</a></li>
-                                <li><a class="dropdown-item" href="HTML/departement-hubungan-masyarakat.html">Hubungan Masyarakat</a></li>
-                                <li><a class="dropdown-item" href="HTML/departement-kerohanian.html">Rohani & Jasmani</a></li>
-                                <li><a class="dropdown-item" href="HTML/departement-kesektariatan.html">Kesektariatan</a></li>
-                                <li><a class="dropdown-item" href="HTML/departement-kesejahteraan-mahasiswa.html">Kesejahteraan Mahasiswa</a></li>
-                                <li><a class="dropdown-item" href="HTML/departement-kewirausahaan-dan-sponsorhip.html">Kewirausahaan & Sponsorship</a></li>
-                                <li><a class="dropdown-item" href="HTML/departement-minat-dan-bakat.html">Minat & Bakat</a></li>
-                                <li><a class="dropdown-item" href="HTML/departement-multimedia.html">Multimedia & Jurnalistik</a></li>
+                                <li><a class="dropdown-item" href="HTML/departement-pengkaderan.html">Pengkaderan</a>
+                                </li>
+                                <li><a class="dropdown-item" href="HTML/departement-hubungan-masyarakat.html">Hubungan
+                                        Masyarakat</a></li>
+                                <li><a class="dropdown-item" href="HTML/departement-kerohanian.html">Rohani &
+                                        Jasmani</a></li>
+                                <li><a class="dropdown-item"
+                                        href="HTML/departement-kesektariatan.html">Kesektariatan</a></li>
+                                <li><a class="dropdown-item"
+                                        href="HTML/departement-kesejahteraan-mahasiswa.html">Kesejahteraan Mahasiswa</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="HTML/departement-kewirausahaan-dan-sponsorhip.html">Kewirausahaan &
+                                        Sponsorship</a></li>
+                                <li><a class="dropdown-item" href="HTML/departement-minat-dan-bakat.html">Minat &
+                                        Bakat</a></li>
+                                <li><a class="dropdown-item" href="HTML/departement-multimedia.html">Multimedia &
+                                        Jurnalistik</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Akademik
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Academic
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Pengumuman</a></li>
-                                <li><a class="dropdown-item" href="#">Fomulir Pendataan Mahasiswa Baru</a></li>
+                                <li><a class="dropdown-item" href="PHP/maba23.php">Fomulir Pendataan Mahasiswa Baru</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Tanya SI
                             </a>
                             <ul class="dropdown-menu">
@@ -104,9 +114,6 @@
                                     AspiraSI
                                 </a>
                             </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Berita</a>
                         </li>
                     </ul>
                     <label class="switch">
@@ -136,9 +143,9 @@
     <div class="container-fluid position-relative p-0 gif">
         <div class="container">
             <div class="logo">
-                <img class="logo-unsrat" src="./../Assets/unsrat.png" alt="logo unsrat">
-                <img class="logo-fmipa" src="./../Assets/fmipa.png" alt="logo fmipa">
-                <img class="logo-himsifor" src="./../Assets/himsifor.png" alt="logo himsifor">
+                <img class="logo-unsrat" src="Assets/unsrat.png" alt="logo unsrat">
+                <img class="logo-fmipa" src="Assets/fmipa.png" alt="logo fmipa">
+                <img class="logo-himsifor" src="Assets/himsifor.png" alt="logo himsifor">
             </div>
             <div style="display: flex; justify-content: center; align-items: center;">
                 <h1 class="display-4 text-himsifor" data-text="HIMSIFOR UNSRAT">HIMSIFOR UNSRAT</h1>
@@ -147,22 +154,68 @@
                 Sam
                 ratulangi
             </p>
-            <!-- <div class="button-exp">
-                <button class="exp" id="showContent" onclick="showContent()">
-                    <span>EXPLORE</span>
-                </button>
-            </div> -->
+        </div>
+    </div>
+
+    <div class="container-fluid facts py-5 pt-lg-0">
+        <div class="container py-5 pt-lg-0">
+            <div class="row gx-0">
+                <div class="col-lg-3 wow zoomIn" data-wow-delay="0.1s">
+                    <div class="shadow d-flex align-items-center justify-content-center p-4" style="height: 150px; background-color: #FF7F00; border-radius: 10px 0px 0px 10px;">
+                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                            <i class="fa fa-users text-warning"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text-white mb-0">Departement</h5>
+                            <h1 class="text-white mb-0" id="jumlah-dept"></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="bg-light shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
+                        <div class="d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px; background-color: #032156 !important;">
+                            <i class="fa-solid fa-user text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text-black mb-0">Total Anggota</h5>
+                            <h1 class="mb-0" id="jumlah-anggota"></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 wow zoomIn" data-wow-delay="0.6s">
+                    <div class="shadow d-flex align-items-center justify-content-center p-4" style="height: 150px; background-color: #FF7F00;">
+                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                            <i class="fa-solid fa-briefcase text-warning"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text-white mb-0">Total Proker</h5>
+                            <h1 class="text-white mb-0" id="jumlah-proker"></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 wow zoomIn" data-wow-delay="0.6s">
+                    <div class="bg-light shadow d-flex align-items-center justify-content-center p-4" style="height: 150px; border-radius: 0px 10px 10px 0px;">
+                        <div class="d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px; background-color: #032156;">
+                            <i class="fa-solid fa-user-gear text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text-black mb-0">Pengurus</h5>
+                            <h1 class="mb-0" id="jumlah-pengurus"></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <div id="content">
         <section class="shape" data-aos="fade-up" style="margin-top: 38px;">
-            <img src="./../Assets/background.png" alt="shape" style="position: absolute; z-index: -1;">
+            <img src="Assets/background.png" alt="shape" style="position: absolute; z-index: -1;">
             <div class="container">
                 <div class="d-flex justify-content-center align-items-center">
                     <div class="apaituhimsi d-flex justify-content-center">
                         <div class="image">
-                            <img class="himsifor-apaitu" src="./../Assets/himsifor.png" alt="logo himsifor">
+                            <img class="himsifor-apaitu" src="Assets/himsifor.png" alt="logo himsifor">
                         </div>
                         <div class="apaitu">
                             <p class="a-himsi">Apa itu HIMSIFOR?</p>
@@ -176,34 +229,9 @@
                                 sosialis dan berwawasan global.</p>
                             <div class="more-btn">
                                 <button type="button" class="more"
-                                    onclick="location.href='tentang.html';">Selengkapnya</button>
+                                    onclick="location.href='HTML/tentang.html';">Selengkapnya</button>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="container row" style="margin-top: 38px;">
-                    <div class="div-vm col-12 col-md-6" data-aos="fade-right">
-                        <h1 class="text-center visi-misi">VISI</h1>
-                        <p class="paragraf-v">Menjadikan himpunan mahasiswa sistem informasi sebagai wadah pemersatu,
-                            penampung aspirasi dan
-                            penyalur bakat mahasiswa prodi sistem informasi sehingga terwujudnya himpunan mahasiswa yang
-                            solid dan bersinergi.</p>
-                    </div>
-                    <div class="div-vm col-12 col-md-6" data-aos="fade-left">
-                        <h1 class="text-center visi-misi">MISI</h1>
-                        <ol class="list-group list-group-numbered">
-                            <li class="list-group-item border-0 paragraf-m">Menjadi wadah kegiatan, penyalur aspirasi,
-                                minat, bakat dan tempat tukar pikiran dengan asas kekeluargaan.</li>
-                            <li class="list-group-item border-0 paragraf-m">Menyelenggarakan dan melanjutkan kegiatan
-                                yang
-                                dapat mendukung tercapainya mahasiswa yang aktif, memiliki solidaritas, berwawasan dan
-                                keterampilan yang kompeten.</li>
-                            <li class="list-group-item border-0 paragraf-m">Menjalin hubungan yang baik dengan civitas,
-                                alumni, serta organisasi atau lembaga lainnya khususnya di lingkungan Universitas sam
-                                ratulangi.</li>
-                            <li class="list-group-item border-0 paragraf-m">Meningkatkan kinerja Himpunan Mahasiswa yang
-                                bisa menjembatani perbedaan mahasiswa tanpa kesenjangan sosial.</li>
-                        </ol>
                     </div>
                 </div>
             </div>
@@ -230,7 +258,8 @@
 
         <section class="departement" style="margin-top: 90px;">
             <div class="container">
-                <h1 class="text-center title-dept" data-aos="fade-up">Departement Himpunan Mahasiswa Sistem Informasi UNSRAT</h1>
+                <h1 class="text-center title-dept" data-aos="fade-up">Departement Himpunan Mahasiswa Sistem Informasi
+                    UNSRAT</h1>
                 <div class="div-dept">
                     <div class="row">
                         <div class="d-flex col-12 col-md-6">
@@ -239,7 +268,7 @@
                                     <div style="padding: 10px;">
                                         <div class="bulat_biru">
                                             <div class="icon">
-                                                <img src="./../Assets/pengkaderan.png" alt="mobile" class="iconn"
+                                                <img src="Assets/pengkaderan.png" alt="mobile" class="iconn"
                                                     style="margin-top: 3px !important;">
                                             </div>
                                         </div>
@@ -258,7 +287,7 @@
                                     <div style="padding: 10px;">
                                         <div class="bulat_orange">
                                             <div class="icon">
-                                                <img src="./../Assets/humas.png" alt="mobile" class="iconn"
+                                                <img src="Assets/humas.png" alt="mobile" class="iconn"
                                                     style="margin-top: 0px !important;">
                                             </div>
                                         </div>
@@ -285,7 +314,7 @@
                                     <div style="padding: 10px;">
                                         <div class="bulat_orange">
                                             <div class="icon">
-                                                <img src="./../Assets/rohani.png" alt="mobile" class="iconn"
+                                                <img src="Assets/rohani.png" alt="mobile" class="iconn"
                                                     style="margin-top: 3px !important;">
                                             </div>
                                         </div>
@@ -306,7 +335,7 @@
                                     <div style="padding: 10px;">
                                         <div class="bulat_biru">
                                             <div class="icon">
-                                                <img src="./../Assets/kesek.png" alt="mobile" class="iconn"
+                                                <img src="Assets/kesek.png" alt="mobile" class="iconn"
                                                     style="margin-top: 3px !important;">
                                             </div>
                                         </div>
@@ -332,7 +361,7 @@
                                     <div style="padding: 10px;">
                                         <div class="bulat_biru">
                                             <div class="icon">
-                                                <img src="./../Assets/kesma.png" alt="mobile" class="iconn"
+                                                <img src="Assets/kesma.png" alt="mobile" class="iconn"
                                                     style="margin-top: 1px !important;">
                                             </div>
                                         </div>
@@ -353,7 +382,7 @@
                                     <div style="padding: 10px;">
                                         <div class="bulat_orange">
                                             <div class="icon">
-                                                <img src="./../Assets/kew.png" alt="mobile" class="iconn"
+                                                <img src="Assets/kew.png" alt="mobile" class="iconn"
                                                     style="margin-top: -3px !important;">
                                             </div>
                                         </div>
@@ -378,7 +407,7 @@
                                     <div style="padding: 10px;">
                                         <div class="bulat_orange">
                                             <div class="icon">
-                                                <img src="./../Assets/mikat.png" alt="mobile" class="iconn"
+                                                <img src="Assets/mikat.png" alt="mobile" class="iconn"
                                                     style="margin-top: 3px !important;">
                                             </div>
                                         </div>
@@ -398,7 +427,7 @@
                                     <div style="padding: 10px;">
                                         <div class="bulat_biru">
                                             <div class="icon">
-                                                <img src="./../Assets/mulmed.png" alt="mobile" class="iconn"
+                                                <img src="Assets/mulmed.png" alt="mobile" class="iconn"
                                                     style="margin-top: -3px;">
                                             </div>
                                         </div>
@@ -423,8 +452,9 @@
                 <div class="row">
                     <div class="col">
                         <div class="d-flex justify-content-center align-items-center">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.5267647828314!2d124.82771664964885!3d1.4579053616212907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x328774ed79fb50c5%3A0xfa8c06ff4708968c!2sProdi%20Sistem%20Informasi%20FMIPA%20UNSRAT!5e0!3m2!1sid!2sid!4v1679900086941!5m2!1sid!2sid"
-                                style="border:0;" allowfullscreen="" loading="lazy"
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.5267647828314!2d124.82771664964885!3d1.4579053616212907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x328774ed79fb50c5%3A0xfa8c06ff4708968c!2sProdi%20Sistem%20Informasi%20FMIPA%20UNSRAT!5e0!3m2!1sid!2sid!4v1679900086941!5m2!1sid!2sid"
+                                style="border:0; height: 200px; width: 100%;" allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
@@ -458,7 +488,7 @@
                     </div>
                 </div>
             </div>
-        
+
             <div class="fixed-footer">
                 <div class="text-center">
                     <div class="footer-content">
@@ -471,9 +501,9 @@
             </div>
         </footer>
 
-        
+
     </div>
-    
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="JS/aos.js"></script>

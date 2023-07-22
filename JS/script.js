@@ -1,33 +1,37 @@
 $(window).on('load', function () {
-	/**
-	 * Add class by document path
-	 * @param  {} 
-	 */
-	$(function () {
-		var CurrentUrl = document.URL;
-		var CurrentUrlEnd = CurrentUrl.split('/').filter(Boolean).pop();
+  /**
+   * Add class by document path
+   * @param  {} 
+   */
+  $(function () {
+      var CurrentUrl = document.URL;
+      var CurrentUrlEnd = CurrentUrl.split('/').filter(Boolean).pop();
 
-		$('.navbar-nav a').each(function () {
-			var ThisUrl = $(this).attr('href');
-			var ThisUrlEnd = ThisUrl.split('/').filter(Boolean).pop();
-			if (ThisUrlEnd == CurrentUrlEnd) {
-				$(this).addClass('active bg-primary text-light rounded');
-				if ($('.navbar-nav .dropdown-item').hasClass('active')) {
-					$(this).closest('.dropdown').find('.dropdown-toggle').addClass('active');
-				}
-			}
-		});
-	});
+      $('.navbar-nav a').each(function () {
+          var ThisUrl = $(this).attr('href');
+          var ThisUrlEnd = ThisUrl.split('/').filter(Boolean).pop();
+          if (ThisUrlEnd == CurrentUrlEnd) {
+              $(this).addClass('active bg-primary text-light rounded');
+              if ($(this).hasClass('dropdown-item')) {
+                  $(this).closest('.dropdown').find('.dropdown-toggle').addClass('active');
+              }
+          }
+      });
+
+      if (CurrentUrlEnd == "./../PHP/maba23.php") {
+          $('a[href$="./../PHP/maba23.php"]').addClass('active bg-primary text-light rounded');
+          $('a[href$="./../PHP/maba23.php"]').closest('.dropdown').find('.dropdown-toggle').addClass('active');
+      }
+  });
 });
 
 $(document).ready(function () {
-	$('.nav-item.dropdown').hover(function () {
-		$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
-	}, function () {
-		$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
-	});
+  $('.nav-item.dropdown').hover(function () {
+      $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+  }, function () {
+      $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+  });
 });
-
 
 
 // function showContent() {

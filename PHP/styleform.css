@@ -94,6 +94,14 @@ form .field input:valid {
   transform: translateY(-50%);
   transition: all 0.3s ease;
 }
+.wrapper form .field select {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #002157;
+  margin-top: 30px;
+}
 
 form .field input:focus~label,
 form .field input:valid~label {
@@ -113,10 +121,9 @@ form .content {
   justify-content: space-around;
 }
 
-form .content .checkbox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.checkbox {
+  margin-top: 30px;
+  margin-left: 10px;
 }
 
 form .content input {
@@ -164,15 +171,11 @@ border-radius: 50%;
 background-color: #002157;
 }
 
-.text-center{
+.follow{
   font-style: normal;
 font-weight: 700;
 font-size: 15.6279px;
 line-height: 16px;
-/* identical to box height, or 100% */
-
-font-feature-settings: 'pnum' on, 'lnum' on;
-
 color: #002157;
 }
 
@@ -190,5 +193,32 @@ color: #002157;
 }
 
 .button_submit:hover {
-  background-color: #45a049;
+  background-color: #45a049 !important;
+}
+
+.title {
+  margin-top: 70px;
+}
+
+@media (max-width : 672px) {
+  .title{
+    margin-top: 0px;
+  }
+}
+
+/* Dark Mode */
+.dark .title {
+  color: #FF8C1A !important;
+}
+
+.dark .checkbox {
+  color:  #fff !important;
+}
+
+.dark .modedark {
+  background-color: #FF8C1A !important;
+}
+
+.dark .follow {
+  color: #FFF !important;
 }

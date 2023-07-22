@@ -130,9 +130,17 @@ html {
   }
 }
 
-/* .gif {
-  width: 100%;
-} */
+.gif {
+  opacity: 80% !important;
+  background-image: linear-gradient(360deg, #002157 0%, rgba(217, 217, 217, 0) 100%),
+    url('./../Assets/hima.JPG');
+  width: 100% !important;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
 
 .gif h1 {
   margin-bottom: 10px;
@@ -156,17 +164,6 @@ html {
   justify-content: center;
   align-items: center;
 }
-
-.gif {
-  opacity: 80% !important;
-  background-image: linear-gradient(360deg, #002157 0%, rgba(217, 217, 217, 0) 100%),
-    url('./../Assets/gif2.gif');
-  width: 100% !important;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 
 .gif .logo .logo-himsifor {
   width: 60px;
@@ -589,6 +586,12 @@ html {
   cursor: pointer;
 }
 
+.dark .dept-div {
+  background-color: #1a1824 !important;
+}
+
+
+
 .dept-div:hover {
   transition: all 0.2s ease-in-out !important;
   transform: scale(1.1) !important;
@@ -677,6 +680,7 @@ a:active {
   line-height: 120%;
   margin-bottom: 5px;
   flex-wrap: wrap;
+  width: 100%;;
 }
 
 .item {
@@ -1254,9 +1258,13 @@ color: #002157;
     padding: 0 20px;
   }
 
+  .visimisi-struktur {
+    margin-top: -160px !important;
+  }
+
   @media (max-width: 677px) {
     .hima-foto {
-      height: 47%;
+      height: 90%;
     }
 
     .data-nama {
@@ -1294,7 +1302,7 @@ color: #002157;
 
   .lh-layer1 {
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     gap: 20px;
     flex-direction: column;
@@ -1303,7 +1311,7 @@ color: #002157;
 
   .lh-layer2 {
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     gap: 20px;
     flex-direction: column;
@@ -1312,7 +1320,7 @@ color: #002157;
 
   .lh-layer3 {
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     gap: 20px;
     flex-direction: column;
@@ -1350,7 +1358,7 @@ color: #002157;
 }
 
 .dark {
-  background-color: #2C3333 !important;
+  background-color: #0f0e17 !important;
 }
 
 /* .dark #nvb{
@@ -1403,20 +1411,26 @@ color: #002157;
 }
 
 .dark .apaituhimsi {
-  background-color: #2C3333 !important;
+  background-color: #1a1824 !important;
 }
 
-.dark .paragraf-m {
-  color: #fff !important;
+.dark .a-himsi, .p-himsi {
+  color: #fffffe!important;
 }
 
-.dark .paragraf-v {
-  color: #fff !important;
+.dark .more {
+  background-color: #0f0e17 !important;
 }
+
 
 .dark .gif {
   background: linear-gradient(360deg, #000917 0%, rgba(217, 217, 217, 0) 100%),
-    url('./../Assets/gif2.gif');
+    url('./../Assets/hima.JPG');
+    width: 100% !important;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .dark .video {
@@ -1440,11 +1454,11 @@ color: #002157;
 }
 
 .dark .dept-name {
-  color: #000 !important;
+  color: #fff !important;
 }
 
 .dark .text-dept {
-  color: #FF7F00 !important;
+  color: #a7a9be !important;
 }
 
 .dark .text-dm {
@@ -1472,13 +1486,9 @@ color: #002157;
 }
 
 .dark .footer {
-  background-color: #1B2020;
+  background-color: #0f0e17;
 }
 
-.row {
-  display: inline;
-  flex-wrap: wrap;
-}
 
 .dark .lh-box {
   background-color: transparent !important;
@@ -1494,17 +1504,36 @@ color: #002157;
   color: #fff !important;
 }
 
+.dark #sejarah .slider-content {
+  background-color: #1a1824;
+}
+
+.dark #sejarah .slider-content::before {
+  content: "";
+  position: absolute;
+  border: medium solid white;
+  border-width: 15px 15px 15px 0;
+  border-color: transparent #1a1824 transparent transparent;
+  top: 7px;
+  left: -15px;
+}
+
+.dark #sejarah .slider-content h3 {
+  color: #fffffe !important;
+}
+
+.dark #sejarah .slider-content p {
+  color: #fffffe !important;
+}
+
 .footer ul li {
   list-style: none;
 }
 
 .footer {
   background-color: #002157;
-  border-top-right-radius: 5%;
-  border-top-left-radius: 5%;
   padding-top: 50px;
-  padding-right: 50px;
-  position: relative;
+  /* position: relative; */
     left: 0;
     bottom: 0;
     width: 100%;
@@ -1579,20 +1608,21 @@ iframe {
   color: #ffffff;
   padding-top: 80px;
   padding-bottom: 20px;
+  display: grid;
+  align-items: center;
   font-size: 13px;
-}
+} 
+
+/* @media (max-width : 545px) {
+  .footer-content {
+    margin-left: 500px;
+  }
+} */
 
 #sejarah {
   margin-bottom: 100px;
 }
-#sejarah h2.sejarah-title {
-  color: #011F6D ;
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 92px;
-  text-align: center;
-  margin-bottom: 56px;
-}
+
 #sejarah .sliders-container {
   /* height: 645px; */
   /* border-left: 3px solid #D6D6D6;
@@ -1600,6 +1630,7 @@ iframe {
   /* margin-left: 20px; */
   position: relative;
 }
+
 #sejarah .sliders-container::before {
   content: "";
   position: absolute;
@@ -1746,4 +1777,12 @@ line-height: 81px;
 letter-spacing: -0.015em;
 
 color: #032156;
+}
+
+@media (min-width: 991.98px) {
+  .facts {
+      position: relative;
+      margin-top: -75px;
+      z-index: 1;
+  }
 }
