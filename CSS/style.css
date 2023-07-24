@@ -475,6 +475,9 @@ html {
 }
 
 @media (max-width: 767px) {
+  .shape-bg {
+    display: none !important;
+  }
   .set {
     margin-top: 20px;
   }
@@ -778,6 +781,7 @@ a:active {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 #logo-himpunan .lh-container .lh-logo img {
@@ -1289,6 +1293,8 @@ color: #002157;
   #logo-himpunan .lh-container .lh-logo {
     position: relative;
     text-align: center;
+    margin-top: 160px;
+    margin-bottom: -180px;
   }
 
   #logo-himpunan .lh-container .lh-logo img {
@@ -1779,10 +1785,37 @@ letter-spacing: -0.015em;
 color: #032156;
 }
 
-@media (min-width: 991.98px) {
+.facts {
+      position: relative;
+      margin-top: -75px;
+      z-index: 1;
+}
+
+@media (max-width: 991px) {
   .facts {
       position: relative;
       margin-top: -75px;
       z-index: 1;
   }
+
+  .depart-icon {
+    margin-left: -8px;
+  }
+
+  .pengurus {
+    margin-left: -50px;
+  }
+
+  .proker {
+    margin-left: -25px;
+  }
+
+  .departement-wrap{
+    border-radius: 10px 10px 0px 0px !important;
+  }
+
+  .pengurus-wrap {
+    border-radius: 0px 0px 10px 10px !important;
+  }
 }
+

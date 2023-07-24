@@ -69,7 +69,7 @@ $conn->close();
 
     <nav class='navbar navbar-expand-lg fixed-top mb-5' id="nvb" style="background-color: #fff;">
         <div class='container'>
-            <a class="navbar-brand d-flex" href="index.html">
+            <a class="navbar-brand d-flex" href="./../index.html">
                 <img src=".././Assets/himsifor horizontal.png" alt="Logo"
                     class="d-inline-block align-text-top hima-logo" style="width: 200px; height: 50px;">
                 <img src=".././Assets/dark.png" alt="Logo" class="d-inline-block align-text-top hima-logo-dark"
@@ -257,23 +257,6 @@ $conn->close();
 
                 <button type="submit" class="btn button_submit mt-3" name="submit">Submit</button>
 
-                <h2 class="text-center mt-4 follow">Follow Us:</h2>
-                <div class="d-flex justify-content-center align-items-center">
-                    <div class="sosmed d-flex">
-                        <div class="bulat modedark d-flex justify-content-center align-items-center me-3">
-                            <a href="www.instagram.com" target="_blank"><i
-                                    class="fa-brands fa-tiktok text-white"></i></a>
-                        </div>
-                        <div class="bulat modedark d-flex justify-content-center align-items-center me-3">
-                            <a href="www.instagram.com" target=" _blank"><i
-                                    class="fa-brands fa-instagram text-white"></i></a>
-                        </div>
-                        <div class="bulat modedark d-flex justify-content-center align-items-center">
-                            <a href="www.instagram.com" target=" _blank"><i
-                                    class="fa-brands fa-youtube text-white"></i></a>
-                        </div>
-                    </div>
-                </div>
             </form>
         </div>
     </div>

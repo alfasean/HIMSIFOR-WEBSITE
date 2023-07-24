@@ -108,7 +108,7 @@ const dept = document.getElementById("jumlah-dept");
 animateValue(dept, 0, 8, 1500);
 
 const anggota = document.getElementById("jumlah-anggota");
-animateValue(anggota, 0, 500, 4700);
+animateValue(anggota, 0, 247, 4200);
 
 const proker = document.getElementById("jumlah-proker");
 animateValue(proker, 0, 50, 2500);

@@ -20,7 +20,6 @@ if ($conn->connect_error) {
 }
 
 if (isset($_POST['submit'])) {
-  // Check if the checkbox is checked
   if (!isset($_POST['checkbox'])) {
     echo "<script>alert('Centang kotak untuk melanjutkan!');</script>";
   } else {
